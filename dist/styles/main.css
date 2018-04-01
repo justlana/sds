@@ -6779,8 +6779,8 @@ section.news {
 
 @media screen and (max-width: 990px) {
   .hidden-sm {
-    display: none; } }
+    display: none !important; } }
 
 @media screen and (min-width: 991px) {
   .hidden-md {
-    display: none; } }
+    display: none !important; } }

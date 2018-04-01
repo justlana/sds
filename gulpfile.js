@@ -10,7 +10,7 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin');
 
 gulp.task('clean', function(){
-  del(['dist']);
+  //del(['dist/*.html','dist/css']);
 });
 
 
@@ -71,7 +71,7 @@ gulp.task('default', ['clean','styles','imagemin','browser-sync','watchFiles'], 
   var injectFiles = gulp.src(['dist/styles/main.css']);
 
   gulp.watch('src/**/*.scss', ['styles']).on('change', browserSync.reload);
-  gulp.watch(['*.html']).on('change', browserSync.reload);
+  gulp.watch('src/*.html').on('change', browserSync.reload);
 
   var injectOptions = {
     addRootSlash: false,
