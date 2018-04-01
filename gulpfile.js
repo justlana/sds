@@ -12,26 +12,6 @@ gulp.task('clean', function(){
   del(['dist']);
 });
 
-gulp.task("concatScripts", function() {
-    return gulp.src([
-        'assets/js/vendor/jquery-3.2.1.slim.min.js',
-        'assets/js/vendor/popper.min.js',
-        'assets/js/vendor/bootstrap.min.js',
-        'assets/js/functions.js'
-        ])
-    .pipe(maps.init())
-    .pipe(concat('main.js'))
-    .pipe(maps.write('./'))
-    .pipe(gulp.dest('assets/js'))
-    .pipe(browserSync.stream());
-});
-
-gulp.task("minifyScripts", ["concatScripts"], function() {
-  return gulp.src("assets/js/main.js")
-    .pipe(uglify())
-    .pipe(rename('main.min.js'))
-    .pipe(gulp.dest('dist/assets/js'));
-});
 
 gulp.task('styles', function(){
   var injectAppFiles = gulp.src('src/styles/*.scss', {read: false});

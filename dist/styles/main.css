@@ -5817,5 +5817,976 @@ button.close {
 .panel {
   color: red; }
 
+html {
+  height: 100%; }
+
 body {
-  background-color: blue; }
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400; }
+
+a:focus {
+  outline: none;
+  border: none; }
+
+a:hover {
+  text-decoration: none !important;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out; }
+
+.nopadding {
+  padding: 0; }
+
+.noborder {
+  border: 0 !important; }
+
+header .nav-bar {
+  border-bottom: 1px solid #ccc;
+  background: white; }
+
+header nav {
+  text-align: right; }
+  header nav a {
+    position: relative;
+    top: 30px;
+    color: #666;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 20px; }
+    header nav a:hover {
+      color: #3ca2cb; }
+    header nav a:last-of-type {
+      color: #3ca2cb;
+      padding-left: 15px; }
+      header nav a:last-of-type::before {
+        content: "|";
+        padding-right: 15px;
+        color: #666; }
+  header nav a.active {
+    color: #cd8162; }
+
+header nav.navbar .nav-item a {
+  color: #fff; }
+
+.topbar {
+  background: #cd8162;
+  padding: 5px 0; }
+  .topbar .client {
+    text-align: right;
+    padding-bottom: 3px; }
+    .topbar .client a {
+      padding: 4px 20px;
+      background: #d59176; }
+      .topbar .client a:last-child {
+        margin-right: 6px; }
+      .topbar .client a:hover {
+        background: #8b5742; }
+    .topbar .client a.active {
+      background: #8b5742; }
+  .topbar a {
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-left: 10px; }
+  .topbar nav.navbar {
+    display: none; }
+
+.navbar-toggler {
+  float: right; }
+
+.nav-item {
+  text-align: left; }
+
+div.bbb.home {
+  position: absolute;
+  right: 40px;
+  top: 40px; }
+
+.rust {
+  background: #8b5742; }
+
+main {
+  margin-top: 110px; }
+
+.row.equal-cols {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .row.equal-cols:before {
+    display: block; }
+  .row.equal-cols:after {
+    display: block; }
+  .row.equal-cols > [class*='col-'] {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .row.equal-cols > [class*='col-'] > * {
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto; }
+
+.nav-bar {
+  background: white; }
+
+.vertical-align {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  text-align: center; }
+
+.horizontal-align {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.overlay {
+  background: rgba(19, 144, 137, 0.6);
+  padding: 30px 50px;
+  height: auto;
+  z-index: 999; }
+
+.tagline {
+  display: block;
+  color: #fff;
+  text-align: center; }
+  .tagline h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+    letter-spacing: -2px; }
+  .tagline h2 {
+    font-weight: 300;
+    font-style: normal;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #fae6b8;
+    font-size: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: auto;
+    text-align: center;
+    letter-spacing: 0; }
+
+.badge {
+  position: absolute;
+  width: 15%;
+  height: 15%;
+  right: 7%;
+  top: 5%;
+  z-index: 100; }
+
+.slick-slide {
+  margin: 0px 20px;
+  position: relative;
+  transition: all ease-in-out .3s;
+  opacity: .2;
+  outline: none; }
+  .slick-slide article h4 {
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 10px; }
+  .slick-slide img {
+    width: 100%;
+    border: 6px solid #ebebe; }
+
+.contact-bar {
+  background: #3ca2cb;
+  display: block;
+  text-align: center;
+  padding: 30px; }
+
+form.contact {
+  width: 310px;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0; }
+  form.contact input[type=text] {
+    font-family: "Open Sans", sans-serif;
+    padding: 12px;
+    text-transform: uppercase;
+    background: white;
+    font-size: 12px;
+    width: 150px;
+    margin-right: 10px;
+    float: left;
+    color: #999;
+    letter-spacing: 1px;
+    text-align: center;
+    border: none; }
+
+input[type=button] {
+  font-family: "Open Sans", sans-serif;
+  padding: 12px;
+  display: inline;
+  text-transform: uppercase;
+  font-size: 12px;
+  width: auto;
+  color: #fff;
+  float: left;
+  background: #cd8162;
+  letter-spacing: 1px;
+  text-align: center;
+  border: none;
+  cursor: pointer; }
+  input[type=button]:hover {
+    background: #b0e2ff;
+    color: #333; }
+
+a.button {
+  font-family: "Open Sans", sans-serif;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  width: auto;
+  color: #fff;
+  background: #cd8162;
+  letter-spacing: 1px;
+  text-align: center;
+  border: none;
+  cursor: pointer; }
+  a.button:hover {
+    background: #8b5742;
+    text-decoration: none; }
+
+a.button-alt {
+  font-family: "Open Sans", sans-serif;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  display: block;
+  font-size: 11px;
+  width: 120px;
+  margin: 0 auto;
+  color: #fff;
+  background: #3ca2cb;
+  letter-spacing: 1px;
+  text-align: center;
+  border: none;
+  cursor: pointer; }
+  a.button-alt:hover {
+    background: #b0e2ff;
+    color: #333;
+    text-decoration: none; }
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  margin: 0 auto; }
+
+.triangle-down.darkblue {
+  border-top: 35px solid #3ca2cb; }
+
+.triangle-down.teal {
+  border-top: 35px solid #20b2aa;
+  margin: 0 0px 0 10%; }
+
+.triangle-down.rust {
+  border-top: 35px solid #8b5742;
+  margin: 0 auto;
+  background: white; }
+
+.triangle-down.green {
+  border-top: 35px solid #055613;
+  position: relative;
+  margin: 0 0px 0 70%; }
+
+.subheading {
+  font-weight: 300;
+  font-style: normal;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #666;
+  font-size: 32px;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 30px; }
+
+.subheading.white {
+  color: #fff;
+  padding-top: 30px; }
+
+.subheading.smaller {
+  font-size: 22px;
+  line-height: 1.25;
+  margin: 10px 0 0px;
+  padding-bottom: 30px; }
+
+.subheading.smaller.salmon {
+  color: #f8c5b0; }
+
+.types article {
+  text-align: center;
+  color: #fff; }
+  .types article h4 {
+    margin: 20px 0;
+    font-weight: normal;
+    font-size: 12px;
+    font-weight: 300;
+    color: #fff; }
+
+.boxes {
+  padding: 0 0 60px;
+  margin: 30px 0;
+  border: 1px solid #ccc;
+  position: relative; }
+  .boxes .button-alt {
+    position: absolute;
+    bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0; }
+  .boxes img {
+    width: 130px;
+    display: block;
+    margin: 30px auto 20px; }
+  .boxes h4 {
+    text-align: center;
+    padding: 14px;
+    display: block;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0; }
+  .boxes p {
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    padding: 0 35px 10px;
+    display: block;
+    font-size: 12px;
+    color: #333;
+    font-weight: 400;
+    letter-spacing: 0; }
+  .boxes ul {
+    padding: 0 15px 30px 45px; }
+    .boxes ul li {
+      font-size: 12px;
+      color: #333; }
+
+.container-fluid.split {
+  padding-left: 0;
+  padding-right: 0; }
+
+.container-fluid.no-padding {
+  padding-left: 0;
+  padding-right: 0; }
+
+.bar {
+  background: #b0e2ff;
+  padding: 30px 20px 20px 0px;
+  color: #666;
+  text-align: center; }
+  .bar h3 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.55;
+    margin: 0 0 5px; }
+
+.bar.alt {
+  background: #8b5742;
+  color: #fff; }
+
+.two-panel.arrow-down {
+  background: #b0e2ff; }
+
+.two-panel.arrow-down.alt {
+  background: #8b5742; }
+
+.two-panel {
+  margin: 50px 0 0;
+  background: #20b2aa; }
+  .two-panel .content {
+    padding: 30px 20px 20px 0px;
+    color: #fff; }
+  .two-panel .content.video {
+    padding: 0px 20px;
+    float: right;
+    color: #fff; }
+  .two-panel .video {
+    position: relative;
+    top: 30px; }
+
+.split .two-panel .content {
+  padding: 60px;
+  float: right;
+  color: #fff; }
+  .split .two-panel .content ul {
+    padding: 0 15px 30px 15px; }
+    .split .two-panel .content ul li {
+      color: #fff; }
+
+.content h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.55;
+  margin: 0 0 20px; }
+
+.content h4 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 26px;
+  font-weight: 300; }
+
+.content p {
+  margin-bottom: 30px; }
+
+.container.quote {
+  margin: 50px auto 30px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.5; }
+
+.author {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #999;
+  text-align: right;
+  display: block;
+  margin-bottom: 60px; }
+
+.contact {
+  background: #b0e2ff;
+  margin: 60px 0;
+  padding-bottom: 60px; }
+
+.align-right {
+  text-align: right; }
+
+.row.chart {
+  background: #b0e2ff;
+  padding: 50px 50px 20px; }
+  .row.chart .content {
+    background: #b0e2ff;
+    padding: 50px; }
+
+.row.car {
+  background: #dbf1fb;
+  padding: 50px 50px 20px;
+  margin-top: 50px; }
+  .row.car img.car {
+    width: 100%; }
+  .row.car .content {
+    padding: 20px 50px; }
+
+img.chart {
+  float: right;
+  width: 100%; }
+
+.surfing {
+  background: url(../img/san-diego-solar-surfing-for-solar.jpg) no-repeat;
+  height: 600px;
+  background-size: cover;
+  display: block; }
+  .surfing .content {
+    padding: 60px 80px;
+    float: right;
+    color: #fff; }
+    .surfing .content h3 {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 36px;
+      font-weight: 300;
+      line-height: 1.5;
+      margin-bottom: 30px; }
+    .surfing .content p {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 18px;
+      margin-bottom: 30px;
+      font-weight: 300; }
+
+.client-upload {
+  background: url(../img/sandiegosolar-building-plans.jpg) no-repeat;
+  height: 630px;
+  background-size: cover;
+  display: block; }
+  .client-upload iframe {
+    margin-top: 20px; }
+
+.community {
+  background: url(../img/san-diego-solar-community.jpg) no-repeat;
+  height: 611px;
+  background-size: cover;
+  display: block; }
+  .community .content {
+    padding: 60px 100px;
+    color: #333;
+    text-align: center; }
+    .community .content h3 {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 36px;
+      color: #333;
+      font-weight: 300;
+      line-height: 1.5;
+      margin-bottom: 30px; }
+    .community .content p {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.25;
+      padding: 0px 10%; }
+    .community .content .button {
+      margin: 20px auto;
+      width: 190px; }
+  .community .licensed {
+    padding: 40px 100px;
+    color: #666;
+    text-align: center; }
+    .community .licensed h3 {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 36px;
+      color: #333;
+      font-weight: 300;
+      line-height: 1.5;
+      margin-bottom: 30px; }
+    .community .licensed p {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.25;
+      padding: 0px 10%; }
+    .community .licensed .button {
+      margin: 20px auto;
+      width: 190px; }
+
+.triangle-down.community {
+  border-top: 35px solid #43758d;
+  position: relative;
+  margin: 0 0px 0 15%; }
+
+.triangle-down.chart {
+  border-top: 35px solid #b0e2ff;
+  position: relative;
+  margin: 0 auto; }
+
+.triangle-down.car {
+  border-top: 35px solid #dbf1fb;
+  position: relative;
+  margin: 0 0px 0 15%; }
+
+.licensed {
+  background: url(../img/san-diego-solar-licensed-contractors.png) no-repeat;
+  height: 858px;
+  background-size: cover;
+  display: block; }
+
+.triangle-down.checkout-work {
+  border-top: 35px solid #b0e2ff;
+  position: relative;
+  margin: 0 0px 0 75%; }
+
+.container.yelp {
+  margin-top: 50px;
+  position: relative; }
+  .container.yelp .content {
+    padding: 40px 100px;
+    color: #666;
+    text-align: center; }
+  .container.yelp .yelp-logo {
+    width: auto;
+    float: right; }
+  .container.yelp .subheading {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 36px;
+    color: #333;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+    margin: 30px; }
+  .container.yelp .box {
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc; }
+    .container.yelp .box header {
+      border: none; }
+      .container.yelp .box header article {
+        position: relative; }
+    .container.yelp .box article header img {
+      float: left;
+      width: 60px;
+      margin: 0 10px 20px 0; }
+    .container.yelp .box article img.rating {
+      width: 80px;
+      margin-bottom: 20px; }
+    .container.yelp .box article span.date {
+      position: absolute;
+      top: 10px;
+      right: 30px;
+      font-size: 11px; }
+    .container.yelp .box article p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 12px;
+      color: #333; }
+  .container.yelp .slick-next {
+    right: 55px; }
+  .container.yelp .slick-prev {
+    left: 55px; }
+  .container.yelp img.yelp {
+    float: right;
+    margin-top: 10px; }
+
+.hero .slick-next {
+  right: 55px; }
+
+.hero .slick-prev {
+  left: 55px; }
+
+.hero .slick-slide {
+  margin: 0px; }
+
+.slick-prev {
+  top: 45%;
+  z-index: 999; }
+
+.slick-next {
+  top: 45%;
+  z-index: 999; }
+
+.hero.slider .slick-prev:before {
+  content: url("../img/previous.png");
+  opacity: .75;
+  z-index: 99; }
+
+.hero.slider .slick-next:before {
+  content: url("../img/next.png");
+  opacity: .75;
+  z-index: 99; }
+
+[dir='rtl'] .hero.slider .slick-prev:before {
+  content: url("../img/previous.png");
+  opacity: .75;
+  z-index: 99; }
+
+[dir='rtl'] .hero.slider .slick-next:before {
+  content: url("../img/next.png");
+  opacity: .75;
+  z-index: 99; }
+
+[dir='rtl'] .case-studies .slick-prev:before {
+  content: url("../img/previous-gray.png");
+  opacity: .75;
+  z-index: 99; }
+
+[dir='rtl'] .case-studies .slick-next:before {
+  content: url("../img/next-gray.png");
+  opacity: .75;
+  z-index: 99; }
+
+[dir='rtl'] .yelp .slick-prev:before {
+  content: url("../img/previous-gray.png");
+  opacity: .75;
+  z-index: 99; }
+
+[dir='rtl'] .yelp .slick-next:before {
+  content: url("../img/next-gray.png");
+  opacity: .75;
+  z-index: 99; }
+
+.case-studies .slick-prev {
+  left: -55px; }
+  .case-studies .slick-prev:before {
+    content: url("../img/previous-gray.png");
+    opacity: .75;
+    z-index: 99; }
+
+.case-studies .slick-next {
+  right: -55px; }
+  .case-studies .slick-next:before {
+    content: url("../img/next-gray.png");
+    opacity: .75;
+    z-index: 99; }
+
+.case-studies .mobile article {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #666;
+  font-size: 16px; }
+  .case-studies .mobile article h1 {
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 5px; }
+
+.yelp .slick-prev:before {
+  content: url("../img/previous-gray.png");
+  opacity: .75;
+  z-index: 99; }
+
+.yelp .slick-next:before {
+  content: url("../img/next-gray.png");
+  opacity: .75;
+  z-index: 99; }
+
+.container.case-studies {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 50px; }
+  .container.case-studies .content {
+    padding: 40px 100px;
+    color: #666;
+    text-align: center; }
+  .container.case-studies .subheading {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 36px;
+    color: #333;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+    margin: 50px 20px; }
+  .container.case-studies .box {
+    margin: 30px;
+    padding: 0px;
+    height: auto; }
+    .container.case-studies .box img {
+      margin: 0px;
+      padding: 0px;
+      height: 100%;
+      width: 100%; }
+    .container.case-studies .box h4 {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 18px;
+      margin: 20px 0;
+      color: #333;
+      text-transform: uppercase;
+      text-align: center; }
+
+.container.contact {
+  background: #b0e2ff;
+  height: 300px; }
+  .container.contact .subheading {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 36px;
+    color: #333;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+    margin: 30px; }
+
+.triangle-down.contact {
+  border-top: 35px solid #b0e2ff;
+  position: relative;
+  margin: 0 0px 0 15%; }
+
+.container.roofing .subheading {
+  margin: 40px 0;
+  text-align: center; }
+
+.container.roofing p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  line-height: 1.5; }
+
+.button.centered {
+  margin-bottom: 50px;
+  float: none; }
+  .button.centered input[type=button] {
+    margin: 0 auto;
+    float: none; }
+
+body.roofing .contact-bar {
+  background: #8b5742; }
+
+body.roofing .slider .bx-caption {
+  top: 30%; }
+
+body.roofing .carousel-caption h4 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 45px;
+  margin: 0% 0 4%;
+  letter-spacing: -2px; }
+
+body.roofing .two-panel {
+  background: #3479a1; }
+
+.triangle-down.home {
+  border-top: 35px solid #7b9166; }
+
+.triangle-down.roofing {
+  border-top: 35px solid #8b5742;
+  margin: 0 auto; }
+
+.triangle-down.bundle {
+  border-top: 35px solid #3479a1;
+  margin: 0 10%; }
+
+body.solar .contact-bar {
+  background: #f5d690; }
+
+body.local .contact-bar {
+  background: #b0e2ff; }
+
+.triangle-down.local {
+  border-top: 35px solid #b0e2ff; }
+
+.triangle-down.solar {
+  border-top: 35px solid #f5d690; }
+
+.slider {
+  width: 100%; }
+
+.slick-active {
+  opacity: 1; }
+
+.slick-current {
+  opacity: 1; }
+
+.modal-content.case-studies {
+  background: #fff;
+  padding: 30px; }
+  .modal-content.case-studies img {
+    width: 100%; }
+  .modal-content.case-studies .description {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #666;
+    font-size: 16px; }
+    .modal-content.case-studies .description h1 {
+      font-size: 25px;
+      color: #333;
+      margin-bottom: 5px; }
+
+section.news {
+  background: url("../img/san-diego-solar-how-does-solar-work.png") no-repeat;
+  background-size: cover; }
+  section.news .subheading {
+    padding: 50px 0 0;
+    color: #fff; }
+  section.news .boxes {
+    background: white; }
+    section.news .boxes h4 {
+      text-align: center;
+      padding: 40px 25px;
+      display: block;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family: "Roboto Condensed", sans-serif;
+      color: #333;
+      letter-spacing: 0; }
+
+@media screen and (max-width: 900px) {
+  header nav {
+    display: none;
+    text-align: center;
+    padding: 10px 0 20px; }
+    header nav a {
+      font-size: 12px;
+      padding-left: 15px;
+      top: 0; }
+      header nav a:last-of-type {
+        clear: both;
+        line-height: 3.5; }
+        header nav a:last-of-type::before {
+          clear: both;
+          content: "";
+          padding-right: 0;
+          color: #666; }
+  .client {
+    display: none; }
+  .topbar .social-links {
+    display: none; }
+  .topbar nav.navbar {
+    display: block; } }
+
+@media screen and (max-width: 1000px) {
+  header nav a {
+    font-size: 12px;
+    padding-left: 20px; } }
+
+@media screen and (max-width: 470px) {
+  header nav {
+    display: none; } }
+
+@media screen and (max-width: 767px) {
+  .tagline h1 {
+    font-size: 30px; }
+  .tagline h2 {
+    font-size: 22px;
+    max-width: 400px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0; }
+  .surfing {
+    height: 1000px; }
+    .surfing .content {
+      padding: 20px;
+      float: none; }
+  .community {
+    height: 1000px; }
+    .community .content {
+      padding: 20px;
+      float: none; } }
+
+@media screen and (max-width: 500px) {
+  .tagline h1 {
+    font-size: 24px;
+    margin: 15% 0 4%; }
+  .tagline h2 {
+    font-size: 18px;
+    max-width: 400px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0; } }
+
+@media screen and (min-width: 769px) and (max-width: 900px) {
+  .boxes img {
+    width: 100px;
+    margin: 20px auto 10px; }
+  .boxes p {
+    padding: 0 15px 10px; } }
+
+@media screen and (max-width: 600px) {
+  .two-panel {
+    height: auto;
+    margin: 0;
+    background: #20b2aa;
+    overflow: hidden; }
+    .two-panel .content {
+      padding: 30px; }
+  .triangle-down {
+    display: none; }
+  .hidden-xs {
+    display: none; } }
+
+@media screen and (max-width: 990px) {
+  .hidden-sm {
+    display: none; } }
+
+@media screen and (min-width: 991px) {
+  .hidden-md {
+    display: none; } }
