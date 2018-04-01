@@ -6,7 +6,8 @@ var gulp = require('gulp'),
     wiredep = require('wiredep').stream,
     browserSync = require('browser-sync').create(),
     del = require('del'),
-    cssmin = require('gulp-cssmin');
+    cssmin = require('gulp-cssmin'),
+    imagemin = require('gulp-imagemin');
 
 gulp.task('clean', function(){
   del(['dist']);
@@ -59,8 +60,14 @@ gulp.task('browser-sync', function() {
 
 });
 
+gulp.task('imagemin', ['clean'], function() {
+  gulp.src(['src/img/*.png','src/img/*.jpg', 'src/img/**/*.jpg'])
+    .pipe(imagemin())
+    .pipe(gulp.dest('dist/img/'));
+});
 
-gulp.task('default', ['clean','styles','browser-sync','watchFiles'], function(){
+
+gulp.task('default', ['clean','styles','imagemin','browser-sync','watchFiles'], function(){
   var injectFiles = gulp.src(['dist/styles/main.css']);
 
   gulp.watch('src/**/*.scss', ['styles']).on('change', browserSync.reload);

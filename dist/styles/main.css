@@ -5877,8 +5877,7 @@ header nav.navbar .nav-item a {
   color: #fff; }
 
 .topbar {
-  background: #cd8162;
-  padding: 5px 0; }
+  background: #cd8162; }
   .topbar .client {
     text-align: right;
     padding-bottom: 3px; }
@@ -6066,7 +6065,6 @@ input[type=button] {
     color: #333; }
 
 a.button {
-  font-family: "Open Sans", sans-serif;
   padding: 12px 20px;
   text-transform: uppercase;
   font-size: 12px;
@@ -6082,7 +6080,6 @@ a.button {
     text-decoration: none; }
 
 a.button-alt {
-  font-family: "Open Sans", sans-serif;
   padding: 12px 20px;
   text-transform: uppercase;
   display: block;
@@ -6184,7 +6181,6 @@ a.button-alt {
     letter-spacing: 0; }
   .boxes p {
     text-align: left;
-    font-family: "Open Sans", sans-serif;
     padding: 0 35px 10px;
     display: block;
     font-size: 12px;
@@ -6273,7 +6269,6 @@ a.button-alt {
   line-height: 1.5; }
 
 .author {
-  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   color: #999;
   text-align: right;
@@ -6448,7 +6443,6 @@ img.chart {
       right: 30px;
       font-size: 11px; }
     .container.yelp .box article p {
-      font-family: "Open Sans", sans-serif;
       font-size: 12px;
       color: #333; }
   .container.yelp .slick-next {
