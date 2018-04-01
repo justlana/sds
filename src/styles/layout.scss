@@ -73,23 +73,23 @@ header {
 	}
 }
 .topbar {
-	background: #cd8162;
+	background: $salmon;
 	padding: 5px 0;
 	.client {
 		text-align: right;
 		padding-bottom: 3px;
 		a {
 			padding: 4px 20px;
-			background: #d59176;
+			background: $lightsalmon;
 			&:last-child {
 				margin-right: 6px;
 			}
 			&:hover {
-				background: #8b5742;
+				background: $darksalmon;
 			}
 		}
 		a.active {
-			background: #8b5742;
+			background: $darksalmon;
 		}
 	}
 	a {
@@ -114,7 +114,7 @@ div.bbb.home {
 	top: 40px;
 }
 .rust {
-	background: #8b5742;
+	background: $darksalmon;
 }
 main {
 	margin-top: 110px;
@@ -270,7 +270,7 @@ input[type=button] {
 	width: auto;
 	color: $white;
 	float: left;
-	background: #cd8162;
+	background: $salmon;
 	letter-spacing: 1px;
 	text-align: center;
 	border: none;
@@ -281,24 +281,24 @@ input[type=button] {
 	}
 }
 a.button {
-	font-family: $font_default;
+
 	padding: 12px 20px;
 	text-transform: uppercase;
 	font-size: 12px;
 	width: auto;
 	color: $white;
-	background: #cd8162;
+	background: $salmon;
 	letter-spacing: 1px;
 	text-align: center;
 	border: none;
 	cursor: pointer;
 	&:hover {
-		background: #8b5742;
+		background: $darksalmon;
 		text-decoration: none;
 	}
 }
 a.button-alt {
-	font-family: $font_default;
+
 	padding: 12px 20px;
 	text-transform: uppercase;
 	display: block;
@@ -332,7 +332,7 @@ a.button-alt {
 	margin: 0 0px 0 10%;
 }
 .triangle-down.rust {
-	border-top: 35px solid #8b5742;
+	border-top: 35px solid $darksalmon;
 	margin: 0 auto;
 	background: white;
 }
@@ -407,7 +407,7 @@ a.button-alt {
 	}
 	p {
 		text-align: left;
-		font-family: $font_default;
+
 		padding: 0 35px 10px;
 		display: block;
 		font-size: 12px;
@@ -445,14 +445,14 @@ a.button-alt {
 	}
 }
 .bar.alt {
-	background: #8b5742;
+	background: $darksalmon;
 	color: $white;
 }
 .two-panel.arrow-down {
 	background: #b0e2ff;
 }
 .two-panel.arrow-down.alt {
-	background: #8b5742;
+	background: $darksalmon;
 }
 .two-panel {
 	margin: 50px 0 0;
@@ -511,7 +511,7 @@ a.button-alt {
 	line-height: 1.5;
 }
 .author {
-	font-family: $font_default;
+
 	font-size: 12px;
 	color: $lightgray;
 	text-align: right;
@@ -712,7 +712,7 @@ img.chart {
 				font-size: 11px;
 			}
 			p {
-				font-family: $font_default;
+
 				font-size: 12px;
 				color: $darkgray;
 			}
@@ -938,7 +938,7 @@ img.chart {
 }
 body.roofing {
 	.contact-bar {
-		background: #8b5742;
+		background: $darksalmon;
 	}
 	.slider {
 		.bx-caption {
@@ -965,7 +965,7 @@ body.roofing {
 	border-top: 35px solid #7b9166;
 }
 .triangle-down.roofing {
-	border-top: 35px solid #8b5742;
+	border-top: 35px solid $darksalmon;
 	margin: 0 auto;
 }
 .triangle-down.bundle {

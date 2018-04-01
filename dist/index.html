@@ -1,19 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Gulp Test</title>
+  <meta charset="utf-8"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>San Diego Solar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- inject:css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endinject -->
-</head>
-<body>
-  <!-- partial:partials/_header.html -->
- <div>
-  This text is in partial
-</div>
 
- <!-- partial -->
+  <!-- partial:partials/_head.html -->
+  <link rel="shortcut icon" href="favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="../favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="../favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="../favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="../favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png">
+<link rel="apple-touch-icon" href="../favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="favicon-144.png">
+<meta name="msapplication-config" content="browserconfig.xml">
+<!-- Google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto+Condensed:300,400" rel="stylesheet">
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+<script type="text/javascript">
+  Calendly.initBadgeWidget({
+    url: 'https://calendly.com/dirk-9',
+    text: 'Schedule a Callback',
+    color: '#cd8162',
+    branding: false
+  });
+</script>
+<!-- Calendly badge widget end -->
+
+  <!-- partial -->
+</head>
+<body class="home">
+<!-- partial:partials/_header.html -->
+<header class="fixed-top">
+  <div class="container-fluid topbar">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <a href="tel:+1-619-276-1149">Call today 619-276-1149</a>
+      </div>
+
+      <!-- mobile only nav -->
+      <div class="col-xs-12 col-sm-6">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../solar/index.html">SOLAR</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../roofing/index.html">ROOFING</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../local/index.html">WHY BUY LOCAL</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../batteries/index.html">STORAGE / CHARGING</a>
+                </li>
+                <li class="nav-item">
+                  <!-- Calendly link widget begin -->
+                  <a href="" onclick="Calendly.showPopupWidget('https://calendly.com/dirk-9');return false;">SCHEDULE CALLBACK</a>
+                  <!-- Calendly link widget end -->
+                </li>
+                <li class="nav-item">
+                  <a href="https://sandiegosolar.sharefile.com" target="_blank">Client Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="client">
+          <a href="https://sandiegosolar.sharefile.com" target="_blank">CLIENT LOGIN</a>
+          <a href="../client-upload/index.html">CLIENT UPLOAD</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ topbar -->
+
+  <!-- fixed logo and nav bar -->
+  <div class="container-fluid">
+    <div class="row nav-bar">
+      <div class="col-sm-4">
+        <img src="../assets/img/san-diego-solar-logo.png" alt="San Diego Solar and Roofing Logo" title="San Diego Solar and Roofing" />
+      </div>
+      <div class="col-sm-8">
+        <nav>
+          <a href="../home/index.html" class="active">HOME</a>
+          <a href="../solar/index.html">SOLAR</a>
+          <a href="../roofing/index.html">ROOFING</a>
+          <a href="../local/index.html">WHY BUY LOCAL</a>
+          <!-- Calendly link widget begin -->
+          <a href="" onclick="Calendly.showPopupWidget('https://calendly.com/dirk-9');return false;">SCHEDULE CALLBACK</a>
+          <!-- Calendly link widget end -->
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!--/ fixed logo and nav bar-->
+</header>
+
+<!-- partial -->
  <script id="__bs_script__">//<![CDATA[
     document.write("<script async src='http://HOST:3002/browser-sync/browser-sync-client.js?v=2.23.6'><\/script>".replace("HOST", location.hostname));
 //]]></script>
