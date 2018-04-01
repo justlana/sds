@@ -12842,7 +12842,7 @@ a.button-alt {
   margin: 50px 0 0;
   background: #20b2aa; }
   .two-panel .content {
-    padding: 30px 20px 20px 0px;
+    padding: 30px;
     color: #fff; }
   .two-panel .content.video {
     padding: 0px 20px;
@@ -13069,7 +13069,7 @@ img.chart {
     margin-top: 10px; }
 
 .hero {
-  margin-top: 55px; }
+  margin-top: 100px; }
   .hero .slick-next {
     right: 55px; }
   .hero .slick-prev {
