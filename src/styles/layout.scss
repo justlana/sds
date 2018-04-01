@@ -26,6 +26,17 @@ a {
 		transition: all .1s ease-in-out;
 	}
 }
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
 .nopadding {
 	padding: 0;
 }
@@ -209,6 +220,7 @@ main {
 	right: 7%;
 	top: 5%;
 	z-index: 100;
+	background: transparent;
 }
 .slick-slide {
 	article {
