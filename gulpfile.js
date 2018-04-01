@@ -63,6 +63,12 @@ gulp.task('styles', function(){
     .pipe(gulp.dest('dist/styles'));
 });
 
+gulp.task('watchFiles', function() {
+  gulp.watch('src/**/*.scss', ['styles']);
+  //gulp.watch(['*.html', '*.php']).on('change', browserSync.reload);
+  //gulp.watch('assets/js/*.js', ['concatScripts']);
+})
+
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
@@ -70,11 +76,15 @@ gulp.task('browser-sync', function() {
             index: "index.html"
         }
     });
+
 });
 
 
-gulp.task('default', ['clean','styles','browser-sync'], function(){
+gulp.task('default', ['clean','styles','browser-sync','watchFiles'], function(){
   var injectFiles = gulp.src(['dist/styles/main.css']);
+
+  gulp.watch('src/**/*.scss', ['styles']).on('change', browserSync.reload);
+  gulp.watch(['*.html']).on('change', browserSync.reload);
 
   var injectOptions = {
     addRootSlash: false,
