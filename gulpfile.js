@@ -1,12 +1,18 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var inject = require('gulp-inject');
-var wiredep = require('wiredep').stream;
-var del = require('del');
+var gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    concat = require('gulp-concat'),
+    inject = require('gulp-inject'),
+    injectPartials = require('gulp-inject-partials'),
+    wiredep = require('wiredep').stream,
+    browserSync = require('browser-sync').create(),
+    del = require('del'),
+    cssmin = require('gulp-cssmin'),
+    imagemin = require('gulp-imagemin');
 
 gulp.task('clean', function(){
-  del(['dist']);
+  //del(['dist/*.html','dist/css']);
 });
+
 
 gulp.task('styles', function(){
   var injectAppFiles = gulp.src('src/styles/*.scss', {read: false});
@@ -38,15 +44,44 @@ gulp.task('styles', function(){
     .pipe(gulp.dest('dist/styles'));
 });
 
-gulp.task('default', ['clean','styles'], function(){
+gulp.task('watchFiles', function() {
+  gulp.watch('src/**/*.scss', ['styles']);
+  //gulp.watch(['*.html', '*.php']).on('change', browserSync.reload);
+  //gulp.watch('assets/js/*.js', ['concatScripts']);
+})
+
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "dist",
+            index: "index.html"
+        }
+    });
+
+});
+
+gulp.task('imagemin', ['clean'], function() {
+  gulp.src(['src/img/*.png','src/img/*.jpg', 'src/img/**/*.jpg'])
+    .pipe(imagemin())
+    .pipe(gulp.dest('dist/img/'));
+});
+
+
+gulp.task('default', ['clean','styles','imagemin','browser-sync','watchFiles'], function(){
   var injectFiles = gulp.src(['dist/styles/main.css']);
+
+  gulp.watch('src/**/*.scss', ['styles']).on('change', browserSync.reload);
+  gulp.watch('src/*.html').on('change', browserSync.reload);
 
   var injectOptions = {
     addRootSlash: false,
     ignorePath: ['src', 'dist']
   };
 
-  return gulp.src('src/index.html')
+  return gulp.src('src/*.html')
     .pipe(inject(injectFiles, injectOptions))
+    .pipe(injectPartials())
     .pipe(gulp.dest('dist'));
+
+
 });
