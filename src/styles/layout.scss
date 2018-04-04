@@ -243,7 +243,6 @@ main {
 	outline: none;
 	img {
 		width: 100%;
-		border: 6px solid #ebebe;
 	}
 }
 .contact-bar {
@@ -337,6 +336,7 @@ a.button-alt {
 }
 .triangle-down.darkblue {
 	border-top: 35px solid #3ca2cb;
+	background: transparent;
 }
 .triangle-down.teal {
 	border-top: 35px solid #20b2aa;
@@ -371,6 +371,7 @@ a.button-alt {
 	line-height: 1.25;
 	margin: 10px 0 0px;
 	padding-bottom: 30px;
+	color: $lightblue;
 }
 .subheading.smaller.salmon {
 	color: $lightsalmon;
@@ -470,7 +471,7 @@ a.button-alt {
 	margin: 50px 0 0;
 	background: #20b2aa;
 	.content {
-		padding: 30px;
+		padding: 30px 50px;
 		color: $white;
 	}
 	.content.video {
@@ -546,21 +547,7 @@ a.button-alt {
 		padding: 50px;
 	}
 }
-.row.car {
-	background: #dbf1fb;
-	padding: 50px 50px 20px;
-	margin-top: 50px;
-	img.car {
-		width: 100%;
-	}
-	.content {
-		padding: 20px 50px;
-	}
-}
-img.chart {
-	float: right;
-	width: 100%;
-}
+
 .surfing {
 	background: url(../img/san-diego-solar-surfing-for-solar.jpg) no-repeat;
 	height: 600px;
@@ -647,6 +634,10 @@ img.chart {
 			width: 190px;
 		}
 	}
+}
+
+.darkblue {
+	background: $mediumblue;
 }
 .triangle-down.community {
 	border-top: 35px solid #43758d;
@@ -741,176 +732,7 @@ img.chart {
 		margin-top: 10px;
 	}
 }
-.hero {
-	margin-top: 100px;
 
-	.slick-next {
-		right: 55px;
-	}
-	.slick-prev {
-		left: 55px;
-	}
-	.slick-slide {
-		margin: 0px;
-	}
-}
-.slick-prev {
-	top: 45%;
-	z-index: 999;
-}
-.slick-next {
-	top: 45%;
-	z-index: 999;
-}
-.hero.slider {
-	.slick-prev {
-		&:before {
-			content: url('../img/previous.png');
-			opacity: .75;
-			z-index: 99;
-		}
-	}
-	.slick-next {
-		&:before {
-			content: url('../img/next.png');
-			opacity: .75;
-			z-index: 99;
-		}
-	}
-}
-[dir='rtl'] {
-	.hero.slider {
-		.slick-prev {
-			&:before {
-				content: url('../img/previous.png');
-				opacity: .75;
-				z-index: 99;
-			}
-		}
-		.slick-next {
-			&:before {
-				content: url('../img/next.png');
-				opacity: .75;
-				z-index: 99;
-			}
-		}
-	}
-	.case-studies {
-		.slick-prev {
-			&:before {
-				content: url('../img/previous-gray.png');
-				opacity: .75;
-				z-index: 99;
-			}
-		}
-		.slick-next {
-			&:before {
-				content: url('../img/next-gray.png');
-				opacity: .75;
-				z-index: 99;
-			}
-		}
-	}
-	.yelp {
-		.slick-prev {
-			&:before {
-				content: url('../img/previous-gray.png');
-				opacity: .75;
-				z-index: 99;
-			}
-		}
-		.slick-next {
-			&:before {
-				content: url('../img/next-gray.png');
-				opacity: .75;
-				z-index: 99;
-			}
-		}
-	}
-}
-.case-studies {
-	.slick-prev {
-		left: -55px;
-		&:before {
-			content: url('../img/previous-gray.png');
-			opacity: .75;
-			z-index: 99;
-		}
-	}
-	.slick-next {
-		right: -55px;
-		&:before {
-			content: url('../img/next-gray.png');
-			opacity: .75;
-			z-index: 99;
-		}
-	}
-	.mobile {
-		article {
-			font-family: $font_heading;
-			color: $mediumgray;
-			font-size: 16px;
-			h1 {
-				font-size: 25px;
-				color: $darkgray;
-				margin-bottom: 5px;
-			}
-		}
-	}
-}
-.yelp {
-	.slick-prev {
-		&:before {
-			content: url('../img/previous-gray.png');
-			opacity: .75;
-			z-index: 99;
-		}
-	}
-	.slick-next {
-		&:before {
-			content: url('../img/next-gray.png');
-			opacity: .75;
-			z-index: 99;
-		}
-	}
-}
-.container.case-studies {
-	border-bottom: 1px solid #ccc;
-	padding-bottom: 50px;
-	.content {
-		padding: 40px 100px;
-		color: $mediumgray;
-		text-align: center;
-	}
-	.subheading {
-		font-family: $font_heading;
-		font-size: 36px;
-		color: $darkgray;
-		font-weight: 300;
-		line-height: 1.5;
-		text-align: center;
-		margin: 50px 20px;
-	}
-	.box {
-		margin: 30px;
-		padding: 0px;
-		height: auto;
-		img {
-			margin: 0px;
-			padding: 0px;
-			height: 100%;
-			width: 100%;
-		}
-		h4 {
-			font-family: $font_heading;
-			font-size: 18px;
-			margin: 20px 0;
-			color: $darkgray;
-			text-transform: uppercase;
-			text-align: center;
-		}
-	}
-}
 .container.contact {
 	background: #b0e2ff;
 	height: 300px;

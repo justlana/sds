@@ -10,13 +10,21 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin');
 
 gulp.task('clean', function(){
-  //del(['dist/*.html','dist/css']);
+  del(['dist/*.html','dist/css','dist/styles']);
+});
+
+gulp.task('index', function () {
+  var target = gulp.src('src/index.html');
+  // It's not necessary to read the files (will speed up things), we're only after their paths:
+  var sources = gulp.src(['src/**/*.js', './src/**/*.css'], {read: false});
+
+  return target.pipe(inject(sources))
+    .pipe(gulp.dest('dist'));
 });
 
 
 gulp.task('styles', function(){
   var injectAppFiles = gulp.src('src/styles/*.scss', {read: false});
-  var injectGlobalFiles = gulp.src('src/global/*.scss', {read: false});
 
   function transformFilepath(filepath) {
     return '@import "' + filepath + '";';
@@ -29,25 +37,20 @@ gulp.task('styles', function(){
     addRootSlash: false
   };
 
-  var injectGlobalOptions = {
-    transform: transformFilepath,
-    starttag: '// inject:global',
-    endtag: '// endinject',
-    addRootSlash: false
-  };
 
   return gulp.src('src/main.scss')
     .pipe(wiredep())
-    .pipe(inject(injectGlobalFiles, injectGlobalOptions))
     .pipe(inject(injectAppFiles, injectAppOptions))
     .pipe(sass())
+    .pipe(cssmin())
     .pipe(gulp.dest('dist/styles'));
+
 });
 
 gulp.task('watchFiles', function() {
   gulp.watch('src/**/*.scss', ['styles']);
-  //gulp.watch(['*.html', '*.php']).on('change', browserSync.reload);
-  //gulp.watch('assets/js/*.js', ['concatScripts']);
+  gulp.watch(['*.html']).on('change', browserSync.reload);
+  gulp.watch('assets/js/*.js', ['concatScripts']);
 })
 
 gulp.task('browser-sync', function() {
@@ -60,14 +63,14 @@ gulp.task('browser-sync', function() {
 
 });
 
-gulp.task('imagemin', ['clean'], function() {
+gulp.task('imagemin', function() {
   gulp.src(['src/img/*.png','src/img/*.jpg', 'src/img/**/*.jpg'])
     .pipe(imagemin())
     .pipe(gulp.dest('dist/img/'));
 });
 
 
-gulp.task('default', ['clean','styles','imagemin','browser-sync','watchFiles'], function(){
+gulp.task('default', ['clean','styles','browser-sync','watchFiles'], function(){
   var injectFiles = gulp.src(['dist/styles/main.css']);
 
   gulp.watch('src/**/*.scss', ['styles']).on('change', browserSync.reload);
@@ -79,6 +82,7 @@ gulp.task('default', ['clean','styles','imagemin','browser-sync','watchFiles'], 
   };
 
   return gulp.src('src/*.html')
+    .pipe(inject(gulp.src('.src/js/*.js', {read: false}), {relative: true}))
     .pipe(inject(injectFiles, injectOptions))
     .pipe(injectPartials())
     .pipe(gulp.dest('dist'));
