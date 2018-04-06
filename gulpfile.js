@@ -70,7 +70,7 @@ gulp.task('imagemin', function() {
 });
 
 
-gulp.task('default', ['clean','styles','browser-sync','watchFiles'], function(){
+gulp.task('default', ['clean','styles','watchFiles', 'browser-sync'], function(){
   var injectFiles = gulp.src(['dist/styles/main.css']);
 
   var injectOptions = {
