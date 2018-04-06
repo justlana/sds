@@ -10,7 +10,7 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin');
 
 gulp.task('clean', function(){
-  del(['dist/*.html','dist/css','dist/styles']);
+  //del(['dist/*.html','dist/css','dist/styles']);
 });
 
 gulp.task('index', function () {
@@ -74,7 +74,7 @@ gulp.task('default', ['clean','styles','browser-sync','watchFiles'], function(){
   var injectFiles = gulp.src(['dist/styles/main.css']);
 
   gulp.watch('src/**/*.scss', ['styles']).on('change', browserSync.reload);
-  gulp.watch('src/*.html').on('change', browserSync.reload);
+  gulp.watch(['src/*.html', 'src/**/*.html']).on('change', browserSync.reload);
 
   var injectOptions = {
     addRootSlash: false,
