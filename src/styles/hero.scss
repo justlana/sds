@@ -178,12 +178,12 @@
 .slick-prev:before
 {
     content: url('../img/previous.png');
-    opacity: .25;
+    opacity: .4;
 }
 [dir='rtl'] .slick-prev:before
 {
     content: url('../img/next-gray.png');
-    opacity: .25;
+    opacity: .4;
 }
 
 .slick-next
@@ -198,21 +198,21 @@
 .slick-next:before
 {
     content: url('../img/next-gray.png');
-    opacity: .25;
+    opacity: .4;
 }
 [dir='rtl'] .slick-next:before
 {
     content: url('../img/previous-gray.png');
-    opacity: .25;
+    opacity: .4;
 }
 
 .hero {
 
 	.slick-next {
-		right: 55px;
+		right: 25px;
 	}
 	.slick-prev {
-		left: 55px;
+		left: 25px;
 	}
 	.slick-slide {
 		margin: 0px;
