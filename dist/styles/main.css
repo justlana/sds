@@ -6560,8 +6560,7 @@ a.button-alt {
   background: #20b2aa; }
   .two-panel h4 {
     text-transform: uppercase;
-    font-size: 18px !important;
-    color: #ffcc66; }
+    font-size: 18px !important; }
   .two-panel.local {
     background: #8b5742; }
   .two-panel.storage {
