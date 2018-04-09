@@ -6846,6 +6846,9 @@ a.button-alt {
 body.roofing .contact-bar {
   background: #8b5742; }
 
+body.roofing a.button:hover {
+  background: #3ca2cb; }
+
 body.roofing .checkout {
   border-top: 10px solid #d59176; }
 
