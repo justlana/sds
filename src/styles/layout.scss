@@ -491,8 +491,8 @@ a.button-alt {
 }
 
 .two-panel {
-	margin: 50px 0 0;
-	background: #20b2aa;
+	margin: 0;
+	background: $darksalmon;
 	.content {
 		padding: 30px 50px;
 		color: $white;
@@ -525,10 +525,10 @@ a.button-alt {
 .content {
 	h3 {
 		font-family: $font_heading;
-		font-size: 36px;
+		font-size: 30px;
 		font-weight: 300;
-		line-height: 1.55;
-		margin: 0 0 20px;
+		line-height: auto;
+		margin: 20px 0 20px;
 	}
 	h4 {
 		font-family: $font_heading;
@@ -689,6 +689,11 @@ a.button-alt {
 }
 .triangle-down.chart {
 	border-top: 35px solid #b0e2ff;
+	position: relative;
+	margin: 0 auto;
+}
+.triangle-down.local {
+	border-top: 35px solid $teal;
 	position: relative;
 	margin: 0 auto;
 }
@@ -858,12 +863,15 @@ body.solar {
 }
 body.local {
 	.contact-bar {
-		background: #b0e2ff;
+		background: $teal;
 	}
 }
-.triangle-down.local {
-	border-top: 35px solid #b0e2ff;
+.triangle-down.darksalmon {
+	border-top: 35px solid $darksalmon;
+	position: relative;
+	margin: 0 0px 0 15%;
 }
+
 .triangle-down.solar {
 	border-top: 35px solid #f5d690;
 }
@@ -1028,7 +1036,7 @@ section.news {
 	.two-panel {
 		height: auto;
 		margin: 0;
-		background: #20b2aa;
+		background: $lightsalmon;
 		overflow: hidden;
 		.content {
 			padding: 30px;
