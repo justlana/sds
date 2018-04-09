@@ -6846,6 +6846,9 @@ a.button-alt {
 body.roofing .contact-bar {
   background: #8b5742; }
 
+body.roofing .checkout {
+  border-top: 10px solid #d59176; }
+
 body.roofing .slider .bx-caption {
   top: 30%; }
 
