@@ -493,6 +493,14 @@ a.button-alt {
 .two-panel {
 	margin: 0;
 	background: $darksalmon;
+
+	&.solar {
+		background: $darkyellow;
+		.content {
+			padding: 30px 50px;
+			color: $mediumgray;
+		}
+	}
 	.content {
 		padding: 30px 50px;
 		color: $white;
@@ -682,6 +690,12 @@ a.button-alt {
 .darkblue {
 	background: $mediumblue;
 }
+.triangle-down.solar-explain {
+	border-top: 35px solid $darkyellow;
+	position: relative;
+	margin: 0 0px 0 15%;
+}
+
 .triangle-down.community {
 	border-top: 35px solid #43758d;
 	position: relative;
@@ -858,7 +872,7 @@ body.roofing {
 }
 body.solar {
 	.contact-bar {
-		background: #f5d690;
+		background: $yellow;
 	}
 }
 body.local {

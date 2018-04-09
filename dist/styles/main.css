@@ -6308,7 +6308,7 @@ main {
     font-weight: 300;
     font-style: normal;
     font-family: "Roboto Condensed", sans-serif;
-    color: #fae6b8;
+    color: #f5d690;
     font-size: 30px;
     max-width: 500px;
     margin: 0 auto;
@@ -6555,6 +6555,11 @@ a.button-alt {
 .two-panel {
   margin: 0;
   background: #8b5742; }
+  .two-panel.solar {
+    background: #ffcc66; }
+    .two-panel.solar .content {
+      padding: 30px 50px;
+      color: #666; }
   .two-panel .content {
     padding: 30px 50px;
     color: #fff; }
@@ -6715,6 +6720,11 @@ a.button-alt {
 
 .darkblue {
   background: #3ca2cb; }
+
+.triangle-down.solar-explain {
+  border-top: 35px solid #ffcc66;
+  position: relative;
+  margin: 0 0px 0 15%; }
 
 .triangle-down.community {
   border-top: 35px solid #43758d;
