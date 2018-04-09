@@ -479,6 +479,9 @@ a.button-alt {
 		margin: 0 0 5px;
 	}
 }
+.dod {
+	background: #3eb5aa;
+}
 .bar.alt {
 	background: $darksalmon;
 	color: $white;
@@ -494,10 +497,29 @@ a.button-alt {
 	margin: 0;
 	background: $teal;
 
+	h4 {
+		text-transform: uppercase;
+		font-size: 18px !important;
+		color: $darkyellow;
+	}
+
 	&.local {
 		background: $darksalmon;
 	}
-
+	&.storage {
+		background: $white;
+		.content {
+			padding: 30px 50px;
+			color: $mediumgray;
+		}
+	}
+	&.storage-alt {
+		background: $lightblue;
+		.content {
+			padding: 30px 50px;
+			color: $mediumgray;
+		}
+	}
 	&.solar {
 		background: $darkyellow;
 		.content {
@@ -576,10 +598,8 @@ a.button-alt {
 	text-align: right;
 }
 .row.chart {
-	background: #b0e2ff;
 	padding: 50px 50px 20px;
 	.content {
-		background: #b0e2ff;
 		padding: 50px;
 	}
 }

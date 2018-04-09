@@ -6542,6 +6542,9 @@ a.button-alt {
     line-height: 1.55;
     margin: 0 0 5px; }
 
+.dod {
+  background: #3eb5aa; }
+
 .bar.alt {
   background: #8b5742;
   color: #fff; }
@@ -6555,8 +6558,22 @@ a.button-alt {
 .two-panel {
   margin: 0;
   background: #20b2aa; }
+  .two-panel h4 {
+    text-transform: uppercase;
+    font-size: 18px !important;
+    color: #ffcc66; }
   .two-panel.local {
     background: #8b5742; }
+  .two-panel.storage {
+    background: #fff; }
+    .two-panel.storage .content {
+      padding: 30px 50px;
+      color: #666; }
+  .two-panel.storage-alt {
+    background: #b0e2ff; }
+    .two-panel.storage-alt .content {
+      padding: 30px 50px;
+      color: #666; }
   .two-panel.solar {
     background: #ffcc66; }
     .two-panel.solar .content {
@@ -6622,10 +6639,8 @@ a.button-alt {
   text-align: right; }
 
 .row.chart {
-  background: #b0e2ff;
   padding: 50px 50px 20px; }
   .row.chart .content {
-    background: #b0e2ff;
     padding: 50px; }
 
 .checkout {
