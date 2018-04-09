@@ -6843,6 +6843,9 @@ a.button-alt {
     margin: 0 auto;
     float: none; }
 
+body.charging .contact-bar {
+  background: #b0e2ff; }
+
 body.roofing .contact-bar {
   background: #8b5742; }
 
@@ -6873,6 +6876,10 @@ body.roofing .two-panel {
 
 .triangle-down.roofing {
   border-top: 35px solid #8b5742;
+  margin: 0 auto; }
+
+.triangle-down.charging {
+  border-top: 35px solid #b0e2ff;
   margin: 0 auto; }
 
 .triangle-down.bundle {

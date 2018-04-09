@@ -838,13 +838,19 @@ a.button-alt {
 		float: none;
 	}
 }
+
+body.charging {
+	.contact-bar {
+		background: $lightblue;
+	}
+}
 body.roofing {
 	.contact-bar {
 		background: $darksalmon;
 	}
 
 	a.button:hover {
-		background: $mediumblue;
+		background: $mediumblue
 	}
 	.checkout {
 		border-top: 10px solid $lightsalmon;
@@ -873,14 +879,23 @@ body.roofing {
 .triangle-down.home {
 	border-top: 35px solid #7b9166;
 }
+
 .triangle-down.roofing {
 	border-top: 35px solid $darksalmon;
 	margin: 0 auto;
 }
+
+.triangle-down.charging {
+	border-top: 35px solid $lightblue;
+	margin: 0 auto;
+}
+
 .triangle-down.bundle {
 	border-top: 35px solid #3479a1;
 	margin: 0 10%;
 }
+
+
 body.solar {
 	.contact-bar {
 		background: $yellow;
