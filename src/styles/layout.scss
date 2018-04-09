@@ -494,6 +494,10 @@ a.button-alt {
 	margin: 0;
 	background: $teal;
 
+	&.local {
+		background: $darksalmon;
+	}
+
 	&.solar {
 		background: $darkyellow;
 		.content {

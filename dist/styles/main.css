@@ -6555,6 +6555,8 @@ a.button-alt {
 .two-panel {
   margin: 0;
   background: #20b2aa; }
+  .two-panel.local {
+    background: #8b5742; }
   .two-panel.solar {
     background: #ffcc66; }
     .two-panel.solar .content {
