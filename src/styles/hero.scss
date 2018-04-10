@@ -1,3 +1,44 @@
+// let's preload to avoid flicker
+#preload_area {
+
+    // home page
+    background-image: url('../img/heros/sandiegosolar-home-solar-panels.jpg');
+    background-image: url('../img/heros/san-diego-solar-tropical-solar-roof.jpg');
+    background-image: url('../img/heros/san-diego-solar-outdoor-solar-panels.jpg');
+
+    // solar page
+    background-image: url('../img/heros/san-diego-solar-tropical-solar-flowers.jpg');
+    background-image: url('../img/heros/sandiegosolar-garden-mount-palm.jpg');
+    background-image: url('../img/heros/san-diego-solar-tropical-solar-solar.jpg');
+
+    // charging
+    background-image: url('../img/heros/san-diego-solar-battery-car.jpg');
+    background-image: url('../img/heros/san-diego-solar-battery-bike.jpg');
+    background-image: url('../img/heros/home-electric-vehicle-charging-station.jpg.jpg');
+    background-image: url('../img/heros/storage-ground-mount.jpg');
+
+    // roofing
+    background-image: url('../img/heros/san-diego-solar-tropical-solar-roof.jpg');
+    background-image: url('../img/heros/sandiegosolar-roofing-clay-dark.jpg');
+    background-image: url('../img/heros/san-diego-solar-clay-roof.jpg');
+
+    // local
+    background-image: url('../img/heros/sandiegosolar-surfing-for-solar-wide.jpg');
+    background-image: url('../img/heros/sandiegosolar-surfing-for-solar-gold.jpg');
+    background-image: url('../img/heros/sandiegosolar-surfing-for-solar-alt.jpg');
+
+    width: 0px;
+    height: 0px;
+    display: none;
+}
+.slick-slide {
+  display: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+
 /* Slider */
 .slick-slider
 {
