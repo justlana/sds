@@ -6686,22 +6686,22 @@ a.button-alt {
   bottom: 10px;
   right: 10px; }
 
-.surfing {
-  background: url(../img/san-diego-solar-surfing-for-solar.jpg) no-repeat;
-  height: 600px;
+.construction {
+  background: url("../img/san-diego-solar-contractors.jpg") no-repeat;
+  height: auto;
   background-size: cover;
   display: block; }
-  .surfing .content {
+  .construction .content {
     padding: 60px 80px;
     float: right;
     color: #fff; }
-    .surfing .content h3 {
+    .construction .content h3 {
       font-family: "Roboto Condensed", sans-serif;
       font-size: 36px;
       font-weight: 300;
       line-height: 1.5;
       margin-bottom: 30px; }
-    .surfing .content p {
+    .construction .content p {
       font-family: "Roboto Condensed", sans-serif;
       font-size: 18px;
       margin-bottom: 30px;
@@ -6714,6 +6714,12 @@ a.button-alt {
   display: block; }
   .client-upload iframe {
     margin-top: 20px; }
+
+.licensed {
+  background: url(../img/san-diego-solar-licensed-contractors.png) no-repeat;
+  height: auto;
+  background-size: cover;
+  display: block; }
 
 .community {
   background: url(../img/san-diego-solar-community.jpg) no-repeat;
@@ -7019,7 +7025,7 @@ section.news {
 
 @media screen and (max-width: 767px) {
   .tagline h1 {
-    font-size: 30px; }
+    font-size: 36px; }
   .tagline h2 {
     font-size: 22px;
     max-width: 400px;
