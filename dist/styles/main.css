@@ -5854,10 +5854,12 @@ footer {
 .navbar-header {
   float: none; }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   nav li a {
     font-size: 12px;
-    padding-left: 20px; } }
+    padding-left: 20px; }
+    nav li a img {
+      width: 160px; } }
 
 @media screen and (max-width: 900px) {
   nav {
@@ -6363,13 +6365,14 @@ main {
 .badge {
   position: absolute;
   width: 15%;
-  height: 15%;
-  right: 7%;
-  top: 5%;
+  height: 20%;
+  right: 10%;
+  top: 20%;
   z-index: 100;
   background: transparent; }
   .badge img {
-    min-height: auto; }
+    min-height: auto;
+    max-width: 256px; }
 
 @media screen and (max-width: 1000px) {
   .badge {
