@@ -6,7 +6,8 @@ var gulp = require('gulp'),
     wiredep = require('wiredep').stream,
     browserSync = require('browser-sync').create(),
     del = require('del'),
-    cssmin = require('gulp-cssmin');
+    cssmin = require('gulp-cssmin'),
+    reload = browserSync.reload;
 
 gulp.task('clean', function(){
   //del(['dist']);
@@ -63,17 +64,15 @@ gulp.task('styles', function(){
     .pipe(gulp.dest('dist/styles'));
 });
 
-gulp.task('watchFiles', function() {
-  gulp.watch('src/**/*.scss', ['styles']);
-  gulp.watch(['src/*.html','src/**/**.html']).on('change', browserSync.reload);
-  //gulp.watch('assets/js/*.js', ['concatScripts']);
-})
+
 
 gulp.task('browser-sync', function() {
     browserSync.init({
+
         server: {
             baseDir: "dist",
-            index: "index.html"
+            files: "src/*.html"
+
         }
     });
 
@@ -82,9 +81,6 @@ gulp.task('browser-sync', function() {
 
 gulp.task('default', ['clean','styles','browser-sync','watchFiles'], function(){
   var injectFiles = gulp.src(['dist/styles/main.css']);
-
-  gulp.watch('src/**/*.scss', ['styles']).on('change', browserSync.reload);
-  gulp.watch(['*.html']).on('change', browserSync.reload);
 
   var injectOptions = {
     addRootSlash: false,
@@ -97,4 +93,23 @@ gulp.task('default', ['clean','styles','browser-sync','watchFiles'], function(){
     .pipe(gulp.dest('dist'));
 
 
+});
+
+gulp.task('watchFiles', function() {
+  gulp.watch('src/**/*.scss', ['styles']);
+  gulp.watch(['src/*.html','src/**/**.html']).on('change', browserSync.reload);
+  //gulp.watch('assets/js/*.js', ['concatScripts']);
+})
+
+// Watch scss AND html files, doing different things with each.
+gulp.task('serve', function () {
+
+    // Serve files from the root of this project
+    browserSync.init({
+        server: {
+            baseDir: "dist"
+        }
+    });
+
+    gulp.watch(['src/*.html','src/**/**.html']).on('change', reload);
 });
