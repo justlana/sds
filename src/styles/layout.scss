@@ -137,8 +137,8 @@ div.bbb.home {
 }
 div.bbb.hero {
 	position: absolute;
-	left: 15px;
-	top: 62%;
+	left: 2%;
+  top: 69%;
 }
 .rust {
 	background: $darksalmon;
@@ -501,7 +501,9 @@ a.button-alt {
 		text-transform: uppercase;
 		font-size: 18px !important;
 	}
-
+	&.car {
+		background: $lightgray;
+	}
 	&.local {
 		background: $darksalmon;
 	}

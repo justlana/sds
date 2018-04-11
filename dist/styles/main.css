@@ -6256,8 +6256,8 @@ div.bbb.home {
 
 div.bbb.hero {
   position: absolute;
-  left: 15px;
-  top: 62%; }
+  left: 2%;
+  top: 69%; }
 
 .rust {
   background: #8b5742; }
@@ -6588,6 +6588,8 @@ a.button-alt {
   .two-panel h4 {
     text-transform: uppercase;
     font-size: 18px !important; }
+  .two-panel.car {
+    background: #999; }
   .two-panel.local {
     background: #8b5742; }
   .two-panel.storage {
