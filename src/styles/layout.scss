@@ -513,6 +513,10 @@ a.button-alt {
 	font-weight: 300;
 	text-align: center;
 	line-height: 1.5;
+
+	@media screen and (max-width: 1000px) {
+		font-size: 18px;
+	}
 }
 .author {
 	font-size: 12px;
@@ -704,6 +708,9 @@ a.button-alt {
 	.yelp-logo {
 		width: auto;
 		float: right;
+		@media screen and (max-width: 1000px) {
+			width: 50px;
+		}
 	}
 	.subheading {
 		font-family: $font_heading;

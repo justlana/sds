@@ -6696,6 +6696,9 @@ a.button-alt {
   font-weight: 300;
   text-align: center;
   line-height: 1.5; }
+  @media screen and (max-width: 1000px) {
+    .container.quote {
+      font-size: 18px; } }
 
 .author {
   font-size: 12px;
@@ -6864,6 +6867,9 @@ a.button-alt {
   .container.yelp .yelp-logo {
     width: auto;
     float: right; }
+    @media screen and (max-width: 1000px) {
+      .container.yelp .yelp-logo {
+        width: 50px; } }
   .container.yelp .subheading {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 36px;
