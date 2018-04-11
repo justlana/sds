@@ -5841,9 +5841,83 @@ footer {
     background: url("../img/social_sprites.png") -10px -186px; }
 
 .navbar {
-  height: 80px; }
+  height: 77px; }
   .navbar .navbar-nav {
     float: right; }
+
+.navbar-header {
+  float: none; }
+
+@media screen and (max-width: 1000px) {
+  nav li a {
+    font-size: 12px;
+    padding-left: 20px; } }
+
+@media screen and (max-width: 900px) {
+  nav {
+    text-align: center;
+    padding: 10px 0 20px; }
+    nav li a {
+      font-size: 12px;
+      padding-left: 15px;
+      top: 0; }
+      nav li a:last-of-type {
+        clear: both;
+        line-height: 3.5; }
+        nav li a:last-of-type::before {
+          clear: both;
+          content: "";
+          padding-right: 0;
+          color: #666; }
+  .client {
+    display: none; } }
+
+.nav-bar {
+  border-bottom: 1px solid #ccc;
+  background: white; }
+
+nav {
+  text-align: right; }
+  nav li a {
+    position: relative;
+    color: #666;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 20px; }
+    nav li a:hover {
+      color: #3ca2cb; }
+    nav li a:last-of-type {
+      color: #3ca2cb;
+      padding-left: 15px; }
+  nav a.active {
+    color: #cd8162; }
+
+nav.navbar .nav-item a {
+  color: #fff; }
+
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 65px; }
+
+.nav-bar {
+  background: white; }
+
+body.solar nav a:nth-of-type(2) {
+  color: #cd8162; }
+
+body.roofing nav a:nth-of-type(3) {
+  color: #cd8162; }
+
+body.local nav a:nth-of-type(1) {
+  color: #cd8162; }
+
+.navbar-toggler {
+  float: right; }
+
+.nav-item {
+  text-align: left; }
 
 #preload_area {
   background-image: url("../img/heros/sandiegosolar-home-solar-panels.jpg");
@@ -6189,72 +6263,6 @@ a:hover {
 .noborder {
   border: 0 !important; }
 
-header .nav-bar {
-  border-bottom: 1px solid #ccc;
-  background: white; }
-
-header nav {
-  text-align: right; }
-  header nav a {
-    position: relative;
-    top: 30px;
-    color: #666;
-    font-family: "Open Sans", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    padding-left: 20px; }
-    header nav a:hover {
-      color: #3ca2cb; }
-    header nav a:last-of-type {
-      color: #3ca2cb;
-      padding-left: 15px; }
-      header nav a:last-of-type::before {
-        content: "|";
-        padding-right: 15px;
-        color: #666; }
-  header nav a.active {
-    color: #cd8162; }
-
-header nav.navbar .nav-item a {
-  color: #fff; }
-
-body.solar nav a:nth-of-type(2) {
-  color: #cd8162; }
-
-body.roofing nav a:nth-of-type(3) {
-  color: #cd8162; }
-
-body.local nav a:nth-of-type(1) {
-  color: #cd8162; }
-
-.topbar {
-  background: #cd8162; }
-  .topbar .client {
-    text-align: right;
-    padding-bottom: 3px; }
-    .topbar .client a {
-      padding: 4px 20px;
-      background: #d59176; }
-      .topbar .client a:last-child {
-        margin-right: 6px; }
-      .topbar .client a:hover {
-        background: #8b5742; }
-    .topbar .client a.active {
-      background: #8b5742; }
-  .topbar a {
-    color: #fff;
-    font-size: 11px;
-    letter-spacing: 1px;
-    margin-left: 10px; }
-  .topbar nav.navbar {
-    display: none; }
-
-.navbar-toggler {
-  float: right; }
-
-.nav-item {
-  text-align: left; }
-
 div.bbb.home {
   position: absolute;
   right: 40px;
@@ -6293,9 +6301,6 @@ main {
       -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
       flex: 1 1 auto; }
-
-.nav-bar {
-  background: white; }
 
 .vertical-align {
   position: absolute;
@@ -7001,35 +7006,22 @@ section.news {
       letter-spacing: 0; }
 
 @media screen and (max-width: 900px) {
-  header nav {
+  nav {
     text-align: center;
     padding: 10px 0 20px; }
-    header nav a {
+    nav a {
       font-size: 12px;
       padding-left: 15px;
       top: 0; }
-      header nav a:last-of-type {
+      nav a:last-of-type {
         clear: both;
         line-height: 3.5; }
-        header nav a:last-of-type::before {
+        nav a:last-of-type::before {
           clear: both;
           content: "";
           padding-right: 0;
           color: #666; }
   .client {
-    display: none; }
-  .topbar .social-links {
-    display: none; }
-  .topbar nav.navbar {
-    display: block; } }
-
-@media screen and (max-width: 1000px) {
-  header nav a {
-    font-size: 12px;
-    padding-left: 20px; } }
-
-@media screen and (max-width: 470px) {
-  header nav {
     display: none; } }
 
 @media screen and (max-width: 767px) {
