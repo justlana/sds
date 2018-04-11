@@ -5859,7 +5859,7 @@ footer {
     font-size: 12px;
     padding-left: 20px; }
     nav li a img {
-      width: 160px; } }
+      max-width: 160px; } }
 
 @media screen and (max-width: 900px) {
   nav {
@@ -6021,7 +6021,9 @@ body.local nav a:nth-of-type(1) {
   float: right; }
 
 .slick-slide img {
-  display: block;
+  display: block; }
+
+.hero .slick-slide img {
   min-height: 500px; }
 
 .slick-slide.slick-loading img {
