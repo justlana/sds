@@ -5840,6 +5840,11 @@ footer {
   footer .bg-googleplus_square {
     background: url("../img/social_sprites.png") -10px -186px; }
 
+.navbar {
+  height: 80px; }
+  .navbar .navbar-nav {
+    float: right; }
+
 #preload_area {
   background-image: url("../img/heros/sandiegosolar-home-solar-panels.jpg");
   background-image: url("../img/heros/san-diego-solar-tropical-solar-roof.jpg");
@@ -6997,7 +7002,6 @@ section.news {
 
 @media screen and (max-width: 900px) {
   header nav {
-    display: none;
     text-align: center;
     padding: 10px 0 20px; }
     header nav a {

@@ -1004,7 +1004,7 @@ section.news {
 @media screen and (max-width: 900px) {
 	header {
 		nav {
-			display: none;
+			//display: none;
 			text-align: center;
 			padding: 10px 0 20px;
 			a {
@@ -1036,6 +1036,8 @@ section.news {
 		}
 	}
 }
+
+
 @media screen and (max-width: 1000px) {
 	header {
 		nav {
