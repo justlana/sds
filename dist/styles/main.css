@@ -5934,7 +5934,8 @@ footer {
   float: right; }
 
 .slick-slide img {
-  display: block; }
+  display: block;
+  min-height: 400px; }
 
 .slick-slide.slick-loading img {
   display: none; }
@@ -6351,6 +6352,8 @@ main {
   top: 5%;
   z-index: 100;
   background: transparent; }
+  .badge img {
+    min-height: auto; }
 
 .slick-slide {
   margin: 0px 20px;

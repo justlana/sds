@@ -238,6 +238,10 @@ main {
 	top: 5%;
 	z-index: 100;
 	background: transparent;
+
+	img {
+		min-height: auto;
+	}
 }
 .slick-slide {
 	article {

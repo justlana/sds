@@ -65,7 +65,7 @@ gulp.task('styles', function(){
 
 gulp.task('watchFiles', function() {
   gulp.watch('src/**/*.scss', ['styles']);
-  gulp.watch(['*.html','**/**.html']).on('change', browserSync.reload);
+  gulp.watch(['src/*.html','src/**/**.html']).on('change', browserSync.reload);
   //gulp.watch('assets/js/*.js', ['concatScripts']);
 })
 
