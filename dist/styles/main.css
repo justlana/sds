@@ -6014,7 +6014,7 @@ body.local nav a:nth-of-type(1) {
 
 .slick-slide img {
   display: block;
-  min-height: 400px; }
+  min-height: 500px; }
 
 .slick-slide.slick-loading img {
   display: none; }
@@ -6364,6 +6364,11 @@ main {
   background: transparent; }
   .badge img {
     min-height: auto; }
+
+@media screen and (max-width: 1000px) {
+  .badge {
+    right: 9%;
+    top: 25%; } }
 
 .slick-slide {
   margin: 0px 20px;

@@ -160,6 +160,14 @@ main {
 		min-height: auto;
 	}
 }
+
+@media screen and (max-width: 1000px) {
+	.badge {
+		right: 9%;
+		top: 25%;
+	}
+}
+
 .slick-slide {
 	article {
 		h4 {
