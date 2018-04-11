@@ -5919,8 +5919,6 @@ footer {
     padding-left: 20px; }
     .navbar-default .navbar-nav li a:hover {
       color: #3ca2cb; }
-    .navbar-default .navbar-nav li a.active {
-      color: #cd8162; }
   .navbar-default .navbar-nav li:last-of-type a {
     color: #3ca2cb;
     padding-left: 15px; }
@@ -5936,13 +5934,13 @@ nav.navbar .nav-item a {
 .nav-bar {
   background: white; }
 
-body.solar nav a:nth-of-type(2) {
+body.solar .navbar-default .navbar-nav > li:nth-of-type(2) a {
   color: #cd8162; }
 
-body.roofing nav a:nth-of-type(3) {
+body.roofing .navbar-default .navbar-nav li:nth-of-type(3) a {
   color: #cd8162; }
 
-body.local nav a:nth-of-type(1) {
+body.local .navbar-default .navbar-nav li:nth-of-type(1) a {
   color: #cd8162; }
 
 .navbar-toggler {
