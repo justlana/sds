@@ -6046,7 +6046,8 @@ body.local .navbar-default .navbar-nav li:nth-of-type(1) a {
   display: block; }
 
 .hero .slick-slide img.hero {
-  min-height: 500px; }
+  min-height: 500px;
+  width: auto; }
 
 .slick-slide.slick-loading img {
   display: none; }
