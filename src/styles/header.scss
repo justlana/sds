@@ -3,6 +3,14 @@
 	.navbar-nav {
 		float: right;
 	}
+	.logo-link {
+		float: left;
+	}
+}
+
+.navbar-default {
+	border: none;
+	background: $white;
 }
 .navbar-header {
 	float: none;

@@ -5844,6 +5844,12 @@ footer {
   height: 77px; }
   .navbar .navbar-nav {
     float: right; }
+  .navbar .logo-link {
+    float: left; }
+
+.navbar-default {
+  border: none;
+  background: #fff; }
 
 .navbar-header {
   float: none; }
