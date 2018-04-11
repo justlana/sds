@@ -9,6 +9,10 @@ footer {
       height: 68px;
       display: inline-block;
       margin: 60px 20px;
+
+      @media screen and (max-width: 1000px) {
+        margin: 20px 20px;
+      }
   }
   .bg-facebook_square {
       background: url('../img/social_sprites.png') -10px -10px;
