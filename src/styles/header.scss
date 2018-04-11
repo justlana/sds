@@ -3,9 +3,6 @@
 	.navbar-nav {
 		float: right;
 	}
-	.logo-link {
-		float: left;
-	}
 }
 .navbar-default {
 	border: none;
@@ -27,7 +24,12 @@
 	}
 }
 @media screen and (max-width: 900px) {
-
+	.logo-link img{
+		width: 270px;
+		float: left;
+		bottom: 6px;
+		position: relative;
+	}
 		nav {
 			//display: none;
 			text-align: center;
@@ -57,10 +59,31 @@
 	border-bottom: 1px solid #ccc;
 	background: white;
 }
+.navbar-collapse.collapse.show {
+		ul.navbar-nav {
+			margin: 0;
+			width: 100%;
+				li {
+					a {
+					text-align: left;
+					color: $darkgray;
+					border-bottom: 1px solid #efefef;
+					padding: 10px 30px;
+					width: 100%;
+					text-align: left;
+
+				}
+				&:hover {
+					background: #efefef;
+				}
+		}
+	}
+}
 .navbar-default .navbar-nav  {
 	text-align: right;
 
-	li a {
+	li {
+		a {
 		position: relative;
 		color: $mediumgray;
 		font-family: $font_default;
@@ -70,13 +93,15 @@
 		&:hover {
 			color: $mediumblue;
 		}
-		&:last-of-type {
+		&.active {
+			color: $salmon;
+		}
+	}
+
+		&:last-of-type a{
 			color: $mediumblue;
 			padding-left: 15px;
 		}
-	}
-	a.active {
-		color: $salmon;
 	}
 }
 nav.navbar {
@@ -106,7 +131,7 @@ body.local nav a:nth-of-type(1) {
 			color: $salmon;
 }
 .navbar-toggler {
-	float: right;
+	right: 20px;
 }
 .nav-item {
 	text-align: left;

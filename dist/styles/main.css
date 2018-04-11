@@ -5844,8 +5844,6 @@ footer {
   height: 77px; }
   .navbar .navbar-nav {
     float: right; }
-  .navbar .logo-link {
-    float: left; }
 
 .navbar-default {
   border: none;
@@ -5862,6 +5860,11 @@ footer {
       max-width: 160px; } }
 
 @media screen and (max-width: 900px) {
+  .logo-link img {
+    width: 270px;
+    float: left;
+    bottom: 6px;
+    position: relative; }
   nav {
     text-align: center;
     padding: 10px 0 20px; }
@@ -5884,6 +5887,19 @@ footer {
   border-bottom: 1px solid #ccc;
   background: white; }
 
+.navbar-collapse.collapse.show ul.navbar-nav {
+  margin: 0;
+  width: 100%; }
+  .navbar-collapse.collapse.show ul.navbar-nav li a {
+    text-align: left;
+    color: #333;
+    border-bottom: 1px solid #efefef;
+    padding: 10px 30px;
+    width: 100%;
+    text-align: left; }
+  .navbar-collapse.collapse.show ul.navbar-nav li:hover {
+    background: #efefef; }
+
 .navbar-default .navbar-nav {
   text-align: right; }
   .navbar-default .navbar-nav li a {
@@ -5895,11 +5911,11 @@ footer {
     padding-left: 20px; }
     .navbar-default .navbar-nav li a:hover {
       color: #3ca2cb; }
-    .navbar-default .navbar-nav li a:last-of-type {
-      color: #3ca2cb;
-      padding-left: 15px; }
-  .navbar-default .navbar-nav a.active {
-    color: #cd8162; }
+    .navbar-default .navbar-nav li a.active {
+      color: #cd8162; }
+  .navbar-default .navbar-nav li:last-of-type a {
+    color: #3ca2cb;
+    padding-left: 15px; }
 
 nav.navbar .nav-item a {
   color: #fff; }
@@ -5922,7 +5938,7 @@ body.local nav a:nth-of-type(1) {
   color: #cd8162; }
 
 .navbar-toggler {
-  float: right; }
+  right: 20px; }
 
 .nav-item {
   text-align: left; }
