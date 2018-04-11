@@ -5845,6 +5845,9 @@ footer {
 
 .navbar {
   height: 77px; }
+  @media screen and (max-width: 900px) {
+    .navbar {
+      height: 75px; } }
   .navbar .navbar-nav {
     float: right; }
 
@@ -5894,12 +5897,11 @@ footer {
   margin: 0;
   width: 100%; }
   .navbar-collapse.collapse.show ul.navbar-nav li a {
-    text-align: left;
+    text-align: right;
     color: #333;
     border-bottom: 1px solid #efefef;
     padding: 10px 30px;
-    width: 100%;
-    text-align: left; }
+    width: 100%; }
   .navbar-collapse.collapse.show ul.navbar-nav li:hover {
     background: #efefef; }
 

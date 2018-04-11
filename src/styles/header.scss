@@ -1,5 +1,9 @@
 .navbar {
 	height: 77px;
+
+	@media screen and (max-width: 900px) {
+		height: 75px;
+	}
 	.navbar-nav {
 		float: right;
 	}
@@ -65,14 +69,12 @@
 			width: 100%;
 				li {
 					a {
-					text-align: left;
-					color: $darkgray;
-					border-bottom: 1px solid #efefef;
-					padding: 10px 30px;
-					width: 100%;
-					text-align: left;
-
-				}
+						text-align: right;
+						color: $darkgray;
+						border-bottom: 1px solid #efefef;
+						padding: 10px 30px;
+						width: 100%;
+					}
 				&:hover {
 					background: #efefef;
 				}
