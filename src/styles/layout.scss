@@ -894,6 +894,7 @@ body.local {
 	opacity: 1;
 }
 .modal-content.case-studies {
+	position: inherit;
 	background: #fff;
 	padding: 30px;
 	img {
@@ -911,6 +912,18 @@ body.local {
 	}
 }
 
+button.close {
+	opacity: 1;
+	width: 32px;
+	height: 32px;
+	top: 37px;
+	z-index: 999999;
+	left: 95.5%;
+	display: block;
+	color: $lightgray;
+	position: relative;
+	float: none;
+}
 
 section.news {
 	background: url('../img/san-diego-solar-how-does-solar-work.png') no-repeat;

@@ -7017,6 +7017,7 @@ body.local .contact-bar {
   opacity: 1; }
 
 .modal-content.case-studies {
+  position: inherit;
   background: #fff;
   padding: 30px; }
   .modal-content.case-studies img {
@@ -7029,6 +7030,18 @@ body.local .contact-bar {
       font-size: 25px;
       color: #333;
       margin-bottom: 5px; }
+
+button.close {
+  opacity: 1;
+  width: 32px;
+  height: 32px;
+  top: 37px;
+  z-index: 999999;
+  left: 95.5%;
+  display: block;
+  color: #999;
+  position: relative;
+  float: none; }
 
 section.news {
   background: url("../img/san-diego-solar-how-does-solar-work.png") no-repeat;
