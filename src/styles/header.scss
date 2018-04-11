@@ -7,7 +7,6 @@
 		float: left;
 	}
 }
-
 .navbar-default {
 	border: none;
 	background: $white;
@@ -58,8 +57,9 @@
 	border-bottom: 1px solid #ccc;
 	background: white;
 }
-nav {
+.navbar-default .navbar-nav  {
 	text-align: right;
+
 	li a {
 		position: relative;
 		color: $mediumgray;
