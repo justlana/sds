@@ -81,6 +81,12 @@
 		}
 	}
 }
+
+.navbar.navbar-default.navbar-fixed-top {
+	.container-fluid {
+		padding: 0;
+	}
+}
 .navbar-default .navbar-nav  {
 	text-align: right;
 
