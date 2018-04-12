@@ -6317,6 +6317,9 @@ body.local .navbar-default .navbar-nav li:nth-of-type(1) a {
     margin-top: 10px; }
   .slick-slide img {
     width: 100%; }
+    @media screen and (max-width: 1000px) {
+      .slick-slide img {
+        width: auto; } }
 
 html {
   height: 100%; }

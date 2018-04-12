@@ -491,5 +491,9 @@
 	outline: none;
 	img {
 		width: 100%;
+
+    @media screen and (max-width: 1000px){
+      width: auto;
+    }
 	}
 }
