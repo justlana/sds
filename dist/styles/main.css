@@ -5852,7 +5852,6 @@ footer {
     float: right; }
 
 .navbar-default {
-  border: none;
   background: #fff; }
 
 .navbar-header {
@@ -6144,7 +6143,7 @@ body.local .navbar-default .navbar-nav li:nth-of-type(1) a {
   opacity: .4; }
 
 .hero {
-  margin-top: 42px; }
+  margin-top: 37px; }
   @media screen and (max-width: 990px) {
     .hero {
       margin-top: 4px; } }
