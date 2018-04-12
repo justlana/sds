@@ -918,6 +918,24 @@ body.local {
 			margin-bottom: 5px;
 		}
 	}
+	&.news {
+		@media screen and (max-width: 900px) {
+			h1 {
+				font-size: 20px;
+				color: $darkgray;
+			}
+			h3 {
+				font-size: 16px;
+				margin: 0;
+			}
+
+			h6 {
+				font-size: 12px;
+				text-transform: uppercase;
+				margin: 0;
+			}
+		}
+	}
 }
 
 button.close {
@@ -933,6 +951,10 @@ button.close {
 	float: none;
 	border: none;
 	outline: none;
+
+	@media screen and (max-width: 900px) {
+		left: 92%;
+	}
 }
 
 section.news {

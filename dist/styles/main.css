@@ -7051,6 +7051,17 @@ body.local .contact-bar {
       font-size: 25px;
       color: #333;
       margin-bottom: 5px; }
+  @media screen and (max-width: 900px) {
+    .modal-content.case-studies.news h1 {
+      font-size: 20px;
+      color: #333; }
+    .modal-content.case-studies.news h3 {
+      font-size: 16px;
+      margin: 0; }
+    .modal-content.case-studies.news h6 {
+      font-size: 12px;
+      text-transform: uppercase;
+      margin: 0; } }
 
 button.close {
   opacity: 1;
@@ -7065,6 +7076,9 @@ button.close {
   float: none;
   border: none;
   outline: none; }
+  @media screen and (max-width: 900px) {
+    button.close {
+      left: 92%; } }
 
 section.news {
   background: url("../img/san-diego-solar-how-does-solar-work.png") no-repeat;
