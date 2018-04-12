@@ -69,7 +69,8 @@
 .navbar-collapse.collapse.show {
 	background: $white;
 		ul.navbar-nav {
-			margin-top: 74px;
+			border-top: 1px solid #efefef;
+			margin: 74px 0 0 0;
 			padding-right: 30px;
 			background: $white;
 			width: 100%;

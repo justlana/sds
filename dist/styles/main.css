@@ -5898,7 +5898,8 @@ footer {
 .navbar-collapse.collapse.show {
   background: #fff; }
   .navbar-collapse.collapse.show ul.navbar-nav {
-    margin-top: 74px;
+    border-top: 1px solid #efefef;
+    margin: 74px 0 0 0;
     padding-right: 30px;
     background: #fff;
     width: 100%; }
