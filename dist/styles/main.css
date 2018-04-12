@@ -5871,12 +5871,14 @@ footer {
     float: left;
     bottom: 6px;
     position: relative; }
+  .navbar-default .navbar-nav li a {
+    padding-left: 11px !important; }
   nav {
     text-align: center;
     padding: 10px 0 20px; }
     nav li a {
       font-size: 12px;
-      padding-left: 15px;
+      padding-left: 5px !important;
       top: 0; }
       nav li a:last-of-type {
         clear: both;
@@ -5893,17 +5895,19 @@ footer {
   border-bottom: 1px solid #ccc;
   background: white; }
 
-.navbar-collapse.collapse.show ul.navbar-nav {
-  margin: 0;
-  width: 100%; }
-  .navbar-collapse.collapse.show ul.navbar-nav li a {
-    text-align: right;
-    color: #333;
-    border-bottom: 1px solid #efefef;
-    padding: 10px 30px;
+.navbar-collapse.collapse.show {
+  background: #fff; }
+  .navbar-collapse.collapse.show ul.navbar-nav {
+    margin: 0;
     width: 100%; }
-  .navbar-collapse.collapse.show ul.navbar-nav li:hover {
-    background: #efefef; }
+    .navbar-collapse.collapse.show ul.navbar-nav li a {
+      text-align: right;
+      color: #333;
+      border-bottom: 1px solid #efefef;
+      padding: 10px 30px;
+      width: 100%; }
+    .navbar-collapse.collapse.show ul.navbar-nav li:hover {
+      background: #efefef; }
 
 .navbar.navbar-default.navbar-fixed-top .container-fluid {
   padding: 0; }
@@ -6136,14 +6140,17 @@ body.local .navbar-default .navbar-nav li:nth-of-type(1) a {
   content: url("../img/previous-gray.png");
   opacity: .4; }
 
-.hero .slick-next {
-  right: 25px; }
-
-.hero .slick-prev {
-  left: 25px; }
-
-.hero .slick-slide {
-  margin: 0px; }
+.hero {
+  margin-top: 42px; }
+  @media screen and (max-width: 990px) {
+    .hero {
+      margin-top: 4px; } }
+  .hero .slick-next {
+    right: 25px; }
+  .hero .slick-prev {
+    left: 25px; }
+  .hero .slick-slide {
+    margin: 0px; }
 
 .slick-prev {
   top: 45%;
@@ -6707,6 +6714,11 @@ a.button-alt {
     .container.quote {
       font-size: 18px; } }
 
+@media screen and (max-width: 900px) {
+  img.chart {
+    position: relative;
+    right: 40px; } }
+
 .author {
   font-size: 12px;
   color: #999;
@@ -6774,7 +6786,7 @@ a.button-alt {
     margin-top: 20px; }
 
 .licensed {
-  background: url(../img/san-diego-solar-licensed-contractors.png) no-repeat;
+  background: url(../img/san-diego-solar-roofing-bg.jp) no-repeat;
   height: auto;
   background-size: cover;
   display: block; }

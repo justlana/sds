@@ -34,13 +34,16 @@
 		bottom: 6px;
 		position: relative;
 	}
+	.navbar-default .navbar-nav li a {
+		padding-left: 11px !important;
+	}
 		nav {
 			//display: none;
 			text-align: center;
 			padding: 10px 0 20px;
 			li a {
 				font-size: 12px;
-				padding-left: 15px;
+				padding-left: 5px !important;
 				top: 0;
 				&:last-of-type {
 					&::before {
@@ -64,6 +67,7 @@
 	background: white;
 }
 .navbar-collapse.collapse.show {
+	background: $white;
 		ul.navbar-nav {
 			margin: 0;
 			width: 100%;

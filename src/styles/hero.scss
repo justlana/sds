@@ -254,6 +254,11 @@
 }
 
 .hero {
+  margin-top: 42px;
+
+  @media screen and (max-width: 990px) {
+		margin-top: 4px;
+	}
 
 	.slick-next {
 		right: 25px;

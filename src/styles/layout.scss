@@ -44,11 +44,6 @@ a {
 	border: 0 !important;
 }
 
-
-
-
-
-
 div.bbb.home {
 	position: absolute;
 	right: 40px;
@@ -518,6 +513,12 @@ a.button-alt {
 		font-size: 18px;
 	}
 }
+img.chart {
+	@media screen and (max-width: 900px) {
+		position: relative;
+    right: 40px;
+	}
+}
 .author {
 	font-size: 12px;
 	color: $lightgray;
@@ -597,7 +598,7 @@ a.button-alt {
 }
 
 .licensed {
-  background: url(../img/san-diego-solar-licensed-contractors.png) no-repeat;
+  background: url(../img/san-diego-solar-roofing-bg.jp) no-repeat;
   height: auto;
   background-size: cover;
   display: block;
