@@ -135,7 +135,6 @@
 .hero .slick-slide img.hero
 {
     min-height: 500px;
-    width: auto;
 }
 .slick-slide.slick-loading img
 {
@@ -445,10 +444,8 @@
 
 .badge {
 	position: absolute;
-	width: 15%;
-	height: 20%;
-	right: 10%;
-	top: 20%;
+  left: 77%;
+  top: 50%;
 	z-index: 100;
 	background: transparent;
 
@@ -461,12 +458,17 @@
 
 @media screen and (max-width: 1000px) {
 	.badge {
-		right: 9%;
-		top: 67%;
     width: 30%;
-    right: 3%;
-	}
-}
+    position: absolute;
+    left: 77%;
+    top: 60%;
+
+        img {
+      		width: 156px;
+          max-width: 156px;
+      	}
+      }
+    }
 
 .slick-slide {
 	article {

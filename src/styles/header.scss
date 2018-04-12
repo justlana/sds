@@ -106,16 +106,11 @@
 		font-family: $font_default;
 		font-size: 12px;
 		font-weight: 400;
-		padding-left: 20px;
+		padding-left: 10px;
 		&:hover {
 			color: $mediumblue;
 		}
 	}
-
-		&:last-of-type a{
-			color: $mediumblue;
-			padding-left: 15px;
-		}
 	}
 }
 nav.navbar {
@@ -144,8 +139,8 @@ body.roofing .navbar-default .navbar-nav li:nth-of-type(3) a{
 body.local .navbar-default .navbar-nav li:nth-of-type(1) a {
 			color: $salmon;
 }
-.navbar-toggler {
-	right: 20px;
+.navbar-toggle {
+	margin-right: 30px !important;
 }
 .nav-item {
 	text-align: left;
