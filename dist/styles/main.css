@@ -7063,7 +7063,9 @@ button.close {
   display: block;
   color: #999;
   position: relative;
-  float: none; }
+  float: none;
+  border: none;
+  outline: none; }
 
 section.news {
   background: url("../img/san-diego-solar-how-does-solar-work.png") no-repeat;
