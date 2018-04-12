@@ -148,52 +148,7 @@ main {
 		letter-spacing: 0;
 	}
 }
-.badge {
-	position: absolute;
-	width: 15%;
-	height: 20%;
-	right: 10%;
-	top: 20%;
-	z-index: 100;
-	background: transparent;
 
-	img {
-		min-height: auto;
-		max-width: 256px;
-		height: auto;
-	}
-}
-
-@media screen and (max-width: 1000px) {
-	.badge {
-		right: 9%;
-		top: 25%;
-	}
-}
-
-.slick-slide {
-	article {
-		h4 {
-			text-align: center;
-			font-weight: 400;
-			font-style: normal;
-			font-family: $font_heading;
-			text-transform: uppercase;
-			color: $mediumgray;
-			font-size: 18px;
-			line-height: 1.5;
-			margin-top: 10px;
-		}
-	}
-	margin: 0px 20px;
-	position: relative;
-	transition: all ease-in-out .3s;
-	opacity: .2;
-	outline: none;
-	img {
-		width: 100%;
-	}
-}
 .contact-bar {
 	background: #3ca2cb;
 	display: block;
