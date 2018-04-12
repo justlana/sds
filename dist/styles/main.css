@@ -5868,6 +5868,7 @@ footer {
   .logo-link img {
     width: 270px;
     float: left;
+    left: 20px;
     bottom: 6px;
     position: relative; }
   .navbar-default .navbar-nav li a {
@@ -5897,7 +5898,9 @@ footer {
 .navbar-collapse.collapse.show {
   background: #fff; }
   .navbar-collapse.collapse.show ul.navbar-nav {
-    margin: 0;
+    margin-top: 74px;
+    padding-right: 30px;
+    background: #fff;
     width: 100%; }
     .navbar-collapse.collapse.show ul.navbar-nav li a {
       text-align: right;
@@ -7177,8 +7180,6 @@ section.news {
     overflow: hidden; }
     .two-panel .content {
       padding: 30px; }
-  .triangle-down {
-    display: none; }
   .hidden-xs {
     display: none; } }
 

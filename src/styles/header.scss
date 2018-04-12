@@ -30,6 +30,7 @@
 	.logo-link img{
 		width: 270px;
 		float: left;
+		left: 20px;
 		bottom: 6px;
 		position: relative;
 	}
@@ -68,7 +69,9 @@
 .navbar-collapse.collapse.show {
 	background: $white;
 		ul.navbar-nav {
-			margin: 0;
+			margin-top: 74px;
+			padding-right: 30px;
+			background: $white;
 			width: 100%;
 				li {
 					a {
