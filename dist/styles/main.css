@@ -6146,7 +6146,11 @@ body.local .navbar-default .navbar-nav li:nth-of-type(1) a {
   margin-top: 37px; }
   @media screen and (max-width: 990px) {
     .hero {
-      margin-top: 4px; } }
+      margin-top: 4px; }
+      .hero a#bbblink {
+        width: 50px !important;
+        height: auto;
+        top: 40px; } }
   .hero .slick-next {
     right: 25px; }
   .hero .slick-prev {
@@ -6166,11 +6170,17 @@ body.local .navbar-default .navbar-nav li:nth-of-type(1) a {
   content: url("../img/previous.png");
   opacity: .75;
   z-index: 99; }
+  @media screen and (max-width: 990px) {
+    .hero.slider .slick-prev:before {
+      display: none; } }
 
 .hero.slider .slick-next:before {
   content: url("../img/next.png");
   opacity: .75;
   z-index: 99; }
+  @media screen and (max-width: 990px) {
+    .hero.slider .slick-next:before {
+      display: none; } }
 
 [dir='rtl'] .hero.slider .slick-prev:before {
   content: url("../img/previous.png");

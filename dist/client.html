@@ -172,13 +172,16 @@
   $(document).on('ready', function() {
 
     $(".slide-two").slick({
-      dots: false,
+      autoplay:true,
+      autoplaySpeed:1500,dots: false,
       infinite: true,
       slidesToShow: 2,
       slidesToScroll: 2
     });
 
     $(".slide-one").slick({
+      autoplay:true,
+      autoplaySpeed: 3500,
       dots: false,
       infinite: true,
       slidesToShow: 1,

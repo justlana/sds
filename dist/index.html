@@ -180,19 +180,19 @@
       <div class="row equal-cols">
         <div class="col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-3 col-md-offset-0">
           <div class="boxes">
-            <a href="../solar/index.html"><img src="img/san-diego-solar-service-circle.png" /></a>
+            <a href="solar.html"><img src="img/san-diego-solar-service-circle.png" /></a>
             <h4>SOLAR PIONEERS</h4>
             <p>
               Experience counts! Having successfully contracted the installation of Solar Electric and Roofing projects in southern California for more than 18 years, San Diego Solar has been a pioneer in the solar industry. Members of the San Diego Solar team have
               obtained many of the earliest Solar PV permits ever issued in Southern California, including:
             </p>
-            <a href="../solar/index.html" class="button-alt">learn more</a>
+            <a href="solar.html" class="button-alt">learn more</a>
           </div>
         </div>
 
         <div class="col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-3 col-md-offset-0">
           <div class="boxes">
-            <a href="../roofing/index.html"><img src="img/san-diego-roofing-service-circle.png" /></a>
+            <a href="roofing.html"><img src="img/san-diego-roofing-service-circle.png" /></a>
             <h4>ROOFING</h4>
             <p>
               Do you want a painter to install your solar system? An air conditioning company to do your roofing ?
@@ -200,32 +200,32 @@
               house.
             </p>
 
-            <a href="../roofing/index.html" class="button-alt">learn more</a>
+            <a href="roofing.html" class="button-alt">learn more</a>
           </div>
         </div>
 
         <div class="col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-3 col-md-offset-0">
 
           <div class="boxes">
-            <a href="../local/index.html"><img src="img/san-diego-community-service-circle.png" /></a>
+            <a href="local.html"><img src="img/san-diego-community-service-circle.png" /></a>
             <h4>COMMUNITY</h4>
             <p>
               We believe in giving back to the community, which is why we donate a portion of each sale to a local cause. <br /><br /> As parents, we believe in causes that benefit our schools, our neighbors, and our environment.<br /><br /> As lifelong
               surfers, we also are involved in local surf competitions, and causes that support and protect the ocean and our beaches.
             </p>
-            <a href="../local/index.html" class="button-alt">learn more</a>
+            <a href="local.html" class="button-alt">learn more</a>
           </div>
         </div>
 
         <div class="col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-3 col-md-offset-0">
           <div class="boxes">
-            <a href="index.html"><img src="img/sandiegosolar-sharefile-circle.png" /></a>
+            <a href="client.html"><img src="img/sandiegosolar-sharefile-circle.png" /></a>
             <h4>CLIENT PORTAL</h4>
             <p>
               We've partnered with Sharefile to make the process easy. All documents, plans, and everything related to your project is accessible 24/7. <br/><br />Send messages, upload files, and easily review drawings, blueprints and details about your
               project.<br /><br />We make sure everyone has the information they need to exceed our client's expectations.
             </p>
-            <a href="index.html" class="button-alt">learn more</a>
+            <a href="client.html" class="button-alt">learn more</a>
           </div>
         </div>
 
@@ -2283,13 +2283,16 @@
   $(document).on('ready', function() {
 
     $(".slide-two").slick({
-      dots: false,
+      autoplay:true,
+      autoplaySpeed:1500,dots: false,
       infinite: true,
       slidesToShow: 2,
       slidesToScroll: 2
     });
 
     $(".slide-one").slick({
+      autoplay:true,
+      autoplaySpeed: 3500,
       dots: false,
       infinite: true,
       slidesToShow: 1,

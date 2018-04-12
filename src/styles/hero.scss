@@ -258,6 +258,12 @@
 
   @media screen and (max-width: 990px) {
 		margin-top: 4px;
+
+      a#bbblink {
+        width: 50px !important;
+        height: auto;
+        top: 40px;
+    }
 	}
 
 	.slick-next {
@@ -284,6 +290,9 @@
 			content: url('../img/previous.png');
 			opacity: .75;
 			z-index: 99;
+      @media screen and (max-width: 990px) {
+        display: none;
+      }
 		}
 	}
 	.slick-next {
@@ -291,9 +300,14 @@
 			content: url('../img/next.png');
 			opacity: .75;
 			z-index: 99;
+      @media screen and (max-width: 990px) {
+        display: none;
+      }
 		}
 	}
 }
+
+
 [dir='rtl'] {
 	.hero.slider {
 		.slick-prev {
