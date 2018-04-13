@@ -6236,6 +6236,10 @@ body.local .navbar-default .navbar-nav li:nth-of-type(1) a {
     color: #333;
     margin-bottom: 5px; }
 
+@media screen and (max-width: 450px) {
+  .mobile.slider img {
+    width: 300px; } }
+
 .yelp .slick-prev:before {
   content: url("../img/previous-gray.png");
   opacity: .75;

@@ -388,6 +388,13 @@
 		}
 	}
 }
+
+@media screen and (max-width: 450px) {
+  .mobile.slider img {
+      width: 300px;
+  }
+}
+
 .yelp {
 	.slick-prev {
 		&:before {
