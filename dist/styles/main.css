@@ -5918,8 +5918,8 @@ footer {
 .navbar-default .navbar-nav {
   text-align: right;
   position: absolute;
-  top: 0px;
-  right: 0; }
+  top: 20px;
+  right: 20px; }
   .navbar-default .navbar-nav li a {
     position: relative;
     color: #666;
@@ -5932,11 +5932,6 @@ footer {
 
 nav.navbar .nav-item a {
   color: #fff; }
-
-.navbar-nav > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  line-height: 65px; }
 
 .nav-bar {
   background: white; }

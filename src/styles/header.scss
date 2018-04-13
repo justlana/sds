@@ -96,8 +96,8 @@
 .navbar-default .navbar-nav  {
 	text-align: right;
 	position: absolute;
-  top: 0px;
-  right: 0;
+  top: 20px;
+  right: 20px;
 
 	li {
 		a {
@@ -121,11 +121,6 @@ nav.navbar {
 	}
 }
 
-.navbar-nav > li > a {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    line-height: 65px;
-	}
 .nav-bar {
 	background: white;
 }
