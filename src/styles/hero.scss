@@ -456,26 +456,33 @@
 	z-index: 100;
 	background: transparent;
 
+  @media screen and (max-width: 1000px) {
+      width: 30%;
+      position: absolute;
+      left: 77%;
+      top: 60%;
+  }
+  @media screen and (max-width: 450px) {
+      left: 64%;
+      top: 72%;
+    }
+
 	img {
 		min-height: auto;
 		max-width: 256px;
 		height: auto;
-	}
-}
 
-@media screen and (max-width: 1000px) {
-	.badge {
-    width: 30%;
-    position: absolute;
-    left: 77%;
-    top: 60%;
-
-        img {
-      		width: 156px;
-          max-width: 156px;
-      	}
-      }
+    @media screen and (max-width: 1000px) {
+        width: 156px;
+        max-width: 156px;
     }
+
+    @media screen and (max-width: 450px) {
+        width: 106px;
+        max-width: 106px;
+      }
+  	}
+  }
 
 .slick-slide {
 	article {

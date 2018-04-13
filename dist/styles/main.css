@@ -6288,20 +6288,28 @@ body.local .navbar-default .navbar-nav li:nth-of-type(1) a {
   top: 50%;
   z-index: 100;
   background: transparent; }
+  @media screen and (max-width: 1000px) {
+    .badge {
+      width: 30%;
+      position: absolute;
+      left: 77%;
+      top: 60%; } }
+  @media screen and (max-width: 450px) {
+    .badge {
+      left: 64%;
+      top: 72%; } }
   .badge img {
     min-height: auto;
     max-width: 256px;
     height: auto; }
-
-@media screen and (max-width: 1000px) {
-  .badge {
-    width: 30%;
-    position: absolute;
-    left: 77%;
-    top: 60%; }
-    .badge img {
-      width: 156px;
-      max-width: 156px; } }
+    @media screen and (max-width: 1000px) {
+      .badge img {
+        width: 156px;
+        max-width: 156px; } }
+    @media screen and (max-width: 450px) {
+      .badge img {
+        width: 106px;
+        max-width: 106px; } }
 
 .slick-slide {
   margin: 0px 20px;
