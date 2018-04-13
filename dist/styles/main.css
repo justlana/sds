@@ -6801,8 +6801,8 @@ a.button-alt {
       font-weight: 300; }
 
 .client-upload {
-  background: url(../img/sandiegosolar-building-plans.jpg) no-repeat;
-  height: 630px;
+  background: url("../img/san-diego-solar-community.jpg") no-repeat;
+  min-height: 730px;
   background-size: cover;
   display: block; }
   .client-upload iframe {
