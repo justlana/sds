@@ -7170,7 +7170,7 @@ section.news {
 @media screen and (max-width: 500px) {
   .tagline h1 {
     font-size: 24px;
-    margin: 15% 0 4%; }
+    letter-spacing: -.5px; }
   .tagline h2 {
     font-size: 18px;
     max-width: 400px;
