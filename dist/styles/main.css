@@ -5913,7 +5913,7 @@ footer {
 .navbar-default .navbar-nav {
   text-align: right;
   position: absolute;
-  top: 0;
+  top: 19px;
   right: 0; }
   .navbar-default .navbar-nav li a {
     position: relative;
