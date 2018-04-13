@@ -5848,8 +5848,6 @@ footer {
   @media screen and (max-width: 900px) {
     .navbar {
       height: 75px; } }
-  .navbar .navbar-nav {
-    float: right; }
 
 .navbar-default {
   background: #fff; }
@@ -5866,28 +5864,26 @@ footer {
 
 @media screen and (max-width: 900px) {
   .logo-link img {
-    width: 270px;
+    width: 250px;
     float: left;
     left: 20px;
     bottom: 6px;
-    position: relative; }
-  .navbar-default .navbar-nav li a {
-    padding-left: 11px !important; }
+    position: relative; } }
+
+@media screen and (max-width: 900px) and (min-width: 768px) and (max-width: 1000px) {
+  .logo-link img {
+    float: left;
+    left: 20px;
+    bottom: 6px;
+    position: relative; } }
+
+@media screen and (max-width: 900px) {
   nav {
     text-align: center;
     padding: 10px 0 20px; }
-    nav li a {
-      font-size: 12px;
-      padding-left: 5px !important;
-      top: 0; }
-      nav li a:last-of-type {
-        clear: both;
-        line-height: 3.5; }
-        nav li a:last-of-type::before {
-          clear: both;
-          content: "";
-          padding-right: 0;
-          color: #666; }
+  .nav > li > a {
+    font-size: 12px;
+    padding: 17px 15px 0 0; }
   .client {
     display: none; } }
 
@@ -5899,8 +5895,7 @@ footer {
   background: #fff; }
   .navbar-collapse.collapse.show ul.navbar-nav {
     border-top: 1px solid #efefef;
-    margin: 74px 0 0 0;
-    padding-right: 30px;
+    margin: 74px 0 0;
     background: #fff;
     width: 100%; }
     .navbar-collapse.collapse.show ul.navbar-nav li a {
@@ -5918,15 +5913,14 @@ footer {
 .navbar-default .navbar-nav {
   text-align: right;
   position: absolute;
-  top: 20px;
-  right: 20px; }
+  top: 0;
+  right: 0; }
   .navbar-default .navbar-nav li a {
     position: relative;
     color: #666;
     font-family: "Open Sans", sans-serif;
     font-size: 12px;
-    font-weight: 400;
-    padding-left: 10px; }
+    font-weight: 400; }
     .navbar-default .navbar-nav li a:hover {
       color: #3ca2cb; }
 
