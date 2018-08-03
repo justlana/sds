@@ -32,6 +32,9 @@
 		bottom: 6px;
 		position: relative;
 	}
+	.social-bar {
+		display: none;
+	}
 	@media (min-width: 768px) and (max-width: 1000px) {
 		.logo-link img {
 			//width: 250px;
@@ -102,6 +105,10 @@
 	position: absolute;
 	top: 10px;
 	right: 0;
+
+	@media screen and (max-width: 900px) {
+		top: 0px;
+	}
 
 	li {
 		a {
