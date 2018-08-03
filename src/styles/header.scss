@@ -1,5 +1,5 @@
 .navbar {
-	height: 77px;
+	height: 107px;
 	@media screen and (max-width: 900px) {
 		height: 75px;
 	}
@@ -94,18 +94,21 @@
 	}
 }
 
+.navbar-fixed-top {
+  top: 0;
+}
 .navbar-default .navbar-nav {
 	text-align: right;
 	position: absolute;
-	top: 19px;
+	top: 10px;
 	right: 0;
 
 	li {
 		a {
 			position: relative;
 			color: $mediumgray;
-			font-family: $font_default;
-			font-size: 12px;
+			font-family: $font_heading;
+			font-size: 15px;
 			font-weight: 400;
 
 			&:hover {
@@ -146,4 +149,44 @@ body.local .navbar-default .navbar-nav li:nth-of-type(1) a {
 
 .nav-item {
 	text-align: left;
+}
+
+.logo-link img {
+	top: 12px;
+	left: 10px;
+	position: absolute;
+}
+
+.social-bar {
+	bottom: 10px;
+	position: absolute;
+	z-index: 1111;
+	right: 10px;
+
+	.facebook, .instagram, .twitter, .youtube {
+		display: inline-block;
+		background: url('../img/header-sprite.png') no-repeat;
+		overflow: hidden;
+		text-indent: -9999px;
+		text-align: left;
+		width: 32px;
+		height: 32px;
+		margin: 0 2px;
+	}
+
+	.facebook {
+		background-position: -32px -0px;
+	}
+
+	.instagram {
+		background-position: -32px -32px;
+	}
+
+	.twitter {
+		background-position: -0px -0px;
+	}
+
+	.youtube {
+		background-position: -0px -32px;
+	}
 }
