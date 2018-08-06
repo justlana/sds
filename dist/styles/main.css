@@ -6182,11 +6182,11 @@ body.local .navbar-default .navbar-nav li:nth-of-type(1) a {
     margin: 0px; }
 
 .slick-prev {
-  top: 45%;
+  top: 55%;
   z-index: 999; }
 
 .slick-next {
-  top: 45%;
+  top: 55%;
   z-index: 999; }
 
 .hero.slider .slick-prev:before {
@@ -6937,6 +6937,8 @@ a.button-alt {
 .container.yelp {
   margin-top: 50px;
   position: relative; }
+  .container.yelp .box article p {
+    text-align: left; }
   .container.yelp .content {
     padding: 40px 100px;
     color: #666;

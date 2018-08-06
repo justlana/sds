@@ -663,6 +663,10 @@ img.chart {
 .container.yelp {
 	margin-top: 50px;
 	position: relative;
+
+	.box article p {
+		text-align: left;
+	}
 	.content {
 		padding: 40px 100px;
 		color: $mediumgray;
