@@ -2,7 +2,7 @@
 // Turn off all error reporting
 error_reporting(0);
 
-$EmailTo = "heylanajacobson@gmail.com"; // <- put your email here
+$EmailTo = "dirk@sandiegosolar.com"; // <- put your email here
 $subject = isset($_POST['subject'])?$_POST['subject']:"You've got an inquiry from your awesome website."; // <- put your email subject here
 
 $email = $_POST['Email'];
