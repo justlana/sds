@@ -39,21 +39,21 @@ Changes are published in the __dist__ directory after running the __gulp__ comma
 ##### How to edit the news items (globally)
 
 1. Open the __src/partials__ directory
-2. Open the ___news.html__ file
-3. Look for __<div class="boxes">__ - each one of these is a news box
-4. Edit the headline in the __<h4>__ tag
-5. Edit the content in the __<p>__ tag
-6. run the __gulp__ command above
-7. walah! it's updated all of the pages in the __dist__ directoru
+2. Open the __`_news.html`__ file
+3. Look for __`<div class="boxes">`__ - each one of these is a news box
+4. Edit the headline in the __`<h4`>__ tag
+5. Edit the content in the __`<p>`__ tag
+6. run the __`gulp`__ command above
+7. walah! it's updated all of the pages in the __dist__ directory
 
 
 ##### How to yelp reviews the news items (globally)
 
 1. Open the __src/partials__ directory
 2. Open the ___yelp.html__ file
-3. Look for __<article>__ - each one of these is a yelp review
-4. Edit the headline inside the __<header class="clearfix">__ tag
-5. Edit the person's name in the __<p>__ tag within the header
-5. Edit the review content in the __<p>__ tag NOT within the header, but below it
-6. run the __gulp__ command above
-7. walah! it's updated all of the pages in the __dist__ directoru
+3. Look for __`<article>`__ - each one of these is a yelp review
+4. Edit the headline inside the __`<header class="clearfix">`__ tag
+5. Edit the person's name in the __`<p>`__ tag within the header
+5. Edit the review content in the __`<p>`__ tag __NOT__ within the header tag mentioned above, but below it
+6. run the __`gulp`__ command above
+7. walah! it's updated all of the pages in the __dist__ directory
