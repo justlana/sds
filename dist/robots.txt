@@ -1,3 +1,4 @@
 User-agent: *
-Allow: 
+Allow:
 Disallow: /sendmail/
+Sitemap: http://sandiegosolar.com/sitemap.xml

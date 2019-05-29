@@ -1069,7 +1069,6 @@
                 <p>
                   GTM Research sees the energy storage market approaching the 1 GW mark in 2019 and crossing it in 2020. By 2023, BTM energy storage deployments will account for 47% of the annual market, GTM estimates.
                 </p>
-                <p>
               </div>
             </div>
           </div>
@@ -1141,62 +1140,57 @@
     </div>
 
     <!--modal for news 4-->
-    <div class="modal" id="contact-form" tabindex="-1" role="dialog" aria-labelledby="Contact San Diego Solar" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
-        <div class="modal-content case-studies news">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="sandiegosolar-title">
-                    <h1>Contact Us</h1>
-                      <p>If you'd prefer to schedule a time to call you back,
-                      <!-- Calendly link widget begin -->
-                      <a href=""  data-dismiss="modal" onclick="Calendly.showPopupWidget('https://calendly.com/sandiegosolar');return false;">click here</a>
-                      <!-- Calendly link widget end -->
-                    </p>
-                    <p>You can also reach us at <a href="tel:+1-619-276-1149">619-276-1149</a></p>
-                </div>
+   <div class="modal" id="contact-form" tabindex="-1" role="dialog" aria-labelledby="Contact San Diego Solar" aria-hidden="true">
+     <div class="modal-dialog modal-lg">
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+       <div class="modal-content case-studies news">
+         <div class="container-fluid">
+           <div class="row">
+             <div class="col-sm-12">
+               <div class="sandiegosolar-title">
+                   <h1>Contact Us</h1>
+                   <p>You can also reach us at <a href="tel:+1-619-276-1149">619-276-1149</a></p>
+               </div>
 
-                <!--Preloader-->
-                <div id="form-sending" class="hidden"><div class="preloader"><img src="img/preloader.gif" alt="San Diego Solar"></div></div>
-                <!--Start alerts-->
-                <div class="alerts">
-                    <div id="form-success" class="hidden"><p>Your was sent successfully - thank you! We will get back to you shortly.</p></div>
-                    <div id="form-error" class="hidden"><p>There was an error sending your email. Please try again later!</p></div>
-                </div>
-                <!--End alerts-->
-                <!--Start Form-->
-                <form id="sandiegosolar-form" action="sendmail/sendmail.php" method="post">
-                  <div class="form-group">
-                    <!--Start Field Name-->
-                        <input type="text" placeholder="Name *" class="form-control" id="name" name="Name" autocomplete="off" required>
-                  </div><!--End Field Name-->
-                  <div class="form-group">
-                    <!--Start Field Email-->
-                        <input type="email" placeholder="Email *" class="form-control" id="email" autocomplete="off" name="Email" required>
-                  </div><!--End Field Email-->
-                  <div class="form-group">
-                    <!--Start Field Phone-->
-                        <input type="tel" placeholder="Phone *" class="form-control" id="Phone" autocomplete="off" name="Phone" required>
-                  </div><!--End Field Phone-->
-                  <div class="form-group"><!--Start Field Comment-->
-                        <textarea class="form-control" rows="3" placeholder="Comment" id="comment" name="Comment"></textarea>
-                  </div><!--End Field Comment-->
-                  <div class="form-group"><!--Start Field Captcha-->
-                    <p>Please complete the following to ensure that you aren't a robot</p>
-                        <span class="captchaWrap"><span class="captcha"></span> = </span>
-                        <input type="number" class="form-control captchaField" id="captchaField" name="captchaField" autocomplete="off" required>
-                        <input type="hidden" id="captchaValue" value="">
-                  </div><!--End Field Captcha-->
-                  <div class="col col-12 text-center first last submitButton"><!--Start Button-->
-                        <button type="submit" class="button">Send</button>
-                  </div><!--Start Button-->
-                </form><!--End Form-->
+               <!--Preloader-->
+               <div id="form-sending" class="hidden"><div class="preloader"><img src="img/preloader.gif" alt="San Diego Solar"></div></div>
+               <!--Start alerts-->
+               <div class="alerts">
+                   <div id="form-success" class="hidden"><p>Your was sent successfully - thank you! We will get back to you shortly.</p></div>
+                   <div id="form-error" class="hidden"><p>There was an error sending your email. Please try again later!</p></div>
+               </div>
+               <!--End alerts-->
+               <!--Start Form-->
+               <form id="sandiegosolar-form" action="sendmail/sendmail.php" method="post">
+                 <div class="form-group">
+                   <!--Start Field Name-->
+                       <input type="text" placeholder="Name *" class="form-control" id="name" name="Name" autocomplete="off" required>
+                 </div><!--End Field Name-->
+                 <div class="form-group">
+                   <!--Start Field Email-->
+                       <input type="email" placeholder="Email *" class="form-control" id="email" autocomplete="off" name="Email" required>
+                 </div><!--End Field Email-->
+                 <div class="form-group">
+                   <!--Start Field Phone-->
+                       <input type="tel" placeholder="Phone *" class="form-control" id="Phone" autocomplete="off" name="Phone" required>
+                 </div><!--End Field Phone-->
+                 <div class="form-group"><!--Start Field Comment-->
+                       <textarea class="form-control" rows="3" placeholder="Comment" id="comment" name="Comment"></textarea>
+                 </div><!--End Field Comment-->
+                 <div class="form-group"><!--Start Field Captcha-->
+                   <p>Please complete the following to ensure that you aren't a robot</p>
+                       <span class="captchaWrap"><span class="captcha"></span> = </span>
+                       <input type="number" class="form-control captchaField" id="captchaField" name="captchaField" autocomplete="off" required>
+                       <input type="hidden" id="captchaValue" value="">
+                 </div><!--End Field Captcha-->
+                 <div class="col col-12 text-center first last submitButton"><!--Start Button-->
+                       <button type="submit" class="button">Send</button>
+                 </div><!--Start Button-->
+               </form><!--End Form-->
 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+ </div>
